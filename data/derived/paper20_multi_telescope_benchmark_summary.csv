@@ -1,13 +1,13 @@
 benchmark_id,telescope,epoch_z,n_sample,metric_name,tau_core_k0,baseline_gr_or_lcdm,reduced_chi2_or_sigma,status
-B01_Euclid_DR1_Live_RAR,ESA Euclid DR1-Foundation (Live TAP),0.13-3.49,1500,median_vTau_over_vGR,1.544,1.0,0.94,VALIDATED_ON_LIVE_EUCLID_DR1
-B02_Euclid_DR1_Live_Lenses,ESA Euclid DR1-Foundation (524 Lenses),0.15-0.90,524,DeltaSigma_200kpc_Msun_pc2,7.0815,0.4882,0.68,15.7x_BOOST_OVER_BARYON_GR
-B03_Euclid_DR1_3D_TimeMap,"ESA Euclid DR1-Foundation (5,955 Objects)",0.05-5.49,5955,void_to_cluster_clock_span_ppm,600.49,18.5,0.72,2583_VOID_2192_CLUSTER_MAPPED
-B04_Planck_2018_CMB,ESA Planck PR3 (TT+TE+EE),1090,613,Omega_cond_over_Omega_b,5.3681,5.364,0.063,STATISTICAL_PARITY_0.06SIGMA
-B05_Euclid_ERO_Abell2390,ESA Euclid ERO + Chandra/XMM,0.228,16,M200_1e15Msun,1.482,1.51,0.19,0.19SIGMA_AGREEMENT
-B06_Clusters_165_6Surveys,HST+Chandra+XMM+Subaru+CFHT+SPT,0.05-1.13,165,median_MTau_over_MWL,1.005,1.0,0.95,CLOSES_2MPC_CLUSTER_OUTSKIRTS
-B07_JWST_HST_z09_Disks,JWST + HST (Mancera Pina+ 2025),0.83-1.00,43,total_chi2_at_zdip,149.55,227.75,1.63,BEATS_LCDM_BY_DAIC_78.2
+B01_Euclid_DR1_Live_RAR,ESA Euclid DR1-Foundation (Live TAP NISP Spec),0.13-3.49,359,median_vTau_over_vGR_OCSR_COCA,1.3247,1.0,0.5679,VALIDATED_ON_359_UNIQUE_EUCLID_SPEC_GALAXIES
+B02_Euclid_DR1_Live_Lenses,ESA Euclid DR1-Foundation (524 Massive Lenses),0.15-0.90,524,DeltaSigma_Isolated_OCSR_200kpc_Msun_pc2,4.0167,0.4292,9.36,9.36x_ISOLATED_42.1x_TWOSECTOR_OVER_GR
+B03_Euclid_DR1_3D_TimeMap,"ESA Euclid DR1-Foundation (5,955 Unique 3D Objects)",0.06-5.48,5955,p05_to_p95_clock_span_ppm,46.9,0.0,1.3832,1348_VOIDS_GT5PPM_665_CLUSTERS_LT_MINUS5PPM
+B04_Planck_2018_CMB,ESA Planck PR3 (TT+TE+EE),1090,613,Omega_cond_over_Omega_b,5.3681,5.364,0.059,STATISTICAL_PARITY_0.059SIGMA
+B05_Euclid_ERO_Abell2390,ESA Euclid ERO + Chandra/XMM,0.228,16,M200_1e15Msun,1.481,1.48,0.002,0.002SIGMA_M200_1.37SIGMA_R200_AGREEMENT
+B06_Clusters_165_6Surveys,HST+Chandra+XMM+Subaru+CFHT+SPT,0.05-1.13,165,CLASH20_median_MTau_over_MWL,1.0123,1.0,1.12,CLOSES_2MPC_CLUSTER_OUTSKIRTS
+B07_JWST_HST_z09_Disks,JWST + HST (Mancera Pina+ 2025),0.83-1.00,43,total_chi2_OCSR_COCA_at_zdip,138.97,227.75,1.63,BEATS_LCDM_BY_DCHI2_88.8_COCA_78.2_BARE
 B08_JWST_ALMA_HighZ_Disks,JWST + ALMA ([CII]/CO Cold Disks),1.47-7.31,17,median_VTau_over_Vobs,1.077,0.68,0.659,EARLY_COLD_DISKS_VALIDATED
 B09_JWST_Early_Collapse,JWST NIRSpec (JADES-z14 & ZF-UDS-7329),3.21-14.18,4,z_virialization,10.5,3.8,0.55,EARLY_MASS_PARADOX_RESOLVED
-B10_Eridanus_CMB_ColdSpot,Planck PR3 + DES Y3 / Euclid South,0.15,12,DeltaT_ColdSpot_uK,-148.5,-26.0,0.42,COLD_SPOT_ANOMALY_RESOLVED
-B11_SPARC_171_Galaxies,Spitzer 3.6um + VLA/WSRT HI,0.0,3373,median_RMSE_kms,12.67,41.09,1.08,ZERO_PARAM_GALAXY_PARITY
-B12_SolarSystem_Cassini_PPN,Cassini + Double Pulsar + NANOGrav,0.0,36,abs_gamma_minus_1,6.37e-11,2.3e-05,0.01,5_ORDERS_BELOW_CASSINI_BOUND
+B10_Eridanus_CMB_ColdSpot,Planck PR3 + DES Y3 / Euclid South,0.15,9,DeltaT_ColdSpot_uK,-153.79,-24.15,0.46,COLD_SPOT_ANOMALY_RESOLVED_K0_ISW
+B11_SPARC_175_Galaxies,Spitzer 3.6um + VLA/WSRT HI,0.0,3373,median_RMSE_kms,12.36,41.09,1.08,ZERO_PARAM_GALAXY_PARITY
+B12_SolarSystem_Cassini_PPN,Cassini + Double Pulsar + NANOGrav,0.0,36,abs_gamma_minus_1,6.37e-11,2.3e-05,1.345,5_ORDERS_BELOW_CASSINI_BOUND

@@ -1,5 +1,5 @@
-field,n_objects,ra_median_deg,dec_median_deg,z_min,z_median,z_max,n_void_faster_clock,n_cluster_slower_clock,max_void_speedup_ppm,min_cluster_slowdown_ppm,median_vTau_over_vGR
-EDFN-North,1500,262.73,66.66,0.064,1.875,5.224,617,523,79.53,-276.48,1.6339
-EDFF-Fornax,672,53.17,-28.14,0.074,1.674,5.221,271,267,77.94,-502.75,1.5834
-COSMOS-Deep,2783,150.35,2.16,0.078,1.658,5.475,1164,1093,79.51,-375.8,1.5622
-Southern-Wide,1000,80.25,-51.02,0.064,0.6,3.368,530,312,66.47,-520.96,1.5253
+field,n_objects,n_galaxies,n_quasars_geometric_tracers,ra_median_deg,dec_median_deg,z_min,z_median,z_max,n_void_faster_clock_gt5ppm,n_cluster_slower_clock_lt_minus5ppm,p95_void_speedup_ppm,p05_cluster_slowdown_ppm,max_void_speedup_ppm,min_cluster_slowdown_ppm,median_vTau_over_vGR
+EDFN-North,1500,1500,0,262.73,66.66,0.064,1.875,5.224,144,45,8.94,-3.32,132.0,-12.65,1.4115
+COSMOS-Deep,2783,2472,311,150.35,2.16,0.078,1.658,5.475,786,316,47.44,-8.92,385.04,-53.42,1.3964
+EDFF-Fornax,672,629,43,53.17,-28.14,0.074,1.674,5.221,269,246,68.29,-28.16,484.04,-112.47,1.383
+Southern-Wide,1000,1000,0,80.25,-51.02,0.064,0.6,3.368,149,58,24.29,-7.28,160.05,-289.6,1.3066
