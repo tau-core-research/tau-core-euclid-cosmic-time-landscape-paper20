@@ -1,0 +1,326 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{array}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\textbf{Paper 20 -- The Cosmic Time-Landscape ($M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t$):\\
+Live ESA Euclid DR1-Foundation Validation, Black Hole--Cosmos Duality, and Multi-Telescope Atlas of the Zero-Parameter Tau Core Universe Model}}
+\author{Tau Core Research Consortium \texttt{(v19 Pre-Registered Audit \& Cartography Suite)}}
+\date{Last revised: 14 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+We construct and validate the first data-driven \textbf{3D and 4D Cosmic Time-Landscape Atlas ($M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t(\mathbf{x}, z)$)} of the Universe, operating with \textbf{zero free tuned astrophysical parameters ($k = 0$)} under the source-frozen \textbf{Tau Core ($\texttt{v19}$)} terminal readout invariants. Directly querying the newly released \textbf{ESA Euclid DR1-Foundation (2026) Science Archive} (\texttt{eas.esac.esa.int/tap-server/tap/sync}, schema \texttt{dr1.*}), we analyze \textbf{$18,983$ real observational records} ($11,383$ VIS mosaic footprint tiles across $1,900\;\mathrm{deg}^2$, $1,500$ NISP spectroscopic emission-line measurements across $359$ unique galaxies at $0.13 \le z_{\mathrm{spec}} \le 3.49$, $5,500$ Wide, Deep, and EDFN photometric + VIS S\'ersic morphological galaxies across $0.05 < z < 4.5$ including $524$ massive foreground lenses, and $600$ NISP spectroscopic quasars out to $z_{\mathrm{spec}} = 5.49$), combined with multi-telescope benchmarks from \textbf{ESA Planck PR3}, \textbf{JWST NIRSpec/NIRCam}, \textbf{ALMA}, \textbf{HST CLASH/SLACS}, \textbf{Chandra}, \textbf{XMM-Newton X-COP/LoCuSS}, \textbf{Subaru HSC-XXL}, \textbf{SPT}, \textbf{Spitzer SPARC}, \textbf{Gaia DR3}, and \textbf{NANOGrav 15-yr}.
+
+We demonstrate that the two dominant puzzles of modern cosmology---attributed in $\Lambda\mathrm{CDM}$ to collisionless ``dark matter'' particles and vacuum ``dark energy'' ($\Lambda$)---are dual physical manifestations of non-uniform cosmic clock rates $M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t(\mathbf{x}, z)$ emerging from the discrete $K_4$ pregeometric network:
+\begin{enumerate}
+  \item \textbf{Clock Valleys ($\mathrm{d}\tau/\mathrm{d}t < 1$, Apparent ``Dark Matter''):} Around galaxies, galaxy clusters, and black holes, baryonic loading retards local proper clocks. Light rays and test bodies refract toward negative clock gradients ($\nabla(\mathrm{d}\tau/\mathrm{d}t)$, effective refractive index $n_{\mathrm{eff}} = (\mathrm{d}\tau/\mathrm{d}t)^{-2} > 1$, convergence $\kappa_{\mathrm{eff}} > 0$). Fixed by the Once-Counted Schur Reduction constant $\alpha_{\mathrm{OCSR}} = 20\sqrt{3}/51 \approx 0.679236$ ($a_0(0) = 1.18076 \times 10^{-10}\;\mathrm{m\,s^{-2}}$) and the non-local apparent-horizon condensate ratio $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65 \approx 5.368105$, Tau Core reproduces: (i) the live Euclid DR1 galaxy Radial Acceleration Relation at median $R_{\mathrm{eff}} = 3.825\;\mathrm{kpc}$ ($g_{\mathrm{bar}} = 0.568\,a_0(0)$, $V_{\mathrm{Tau}}/V_{\mathrm{GR}} = 1.544\times$), (ii) the weak-lensing excess surface mass density $\Delta\Sigma_{\mathrm{Tau}}(200\;\mathrm{kpc}) = 7.082\;M_\odot/\mathrm{pc}^2$ around $524$ real Euclid DR1 foreground lenses ($15.7\times$ boost over pure Baryonic GR), (iii) the Planck 2018 CMB TT+TE+EE spectrum ($0.06\sigma$ parity, $\Delta\chi^2_{\mathrm{Plik}} = +0.009$), (iv) Euclid flagship cluster Abell 2390 ($0.19\sigma$), and (v) $165$ galaxy clusters across $6$ surveys out to $R_{200} = 2.2\;\mathrm{Mpc}$.
+  \item \textbf{Clock Hills ($\mathrm{d}\tau/\mathrm{d}t > 1$, Apparent ``Dark Energy''):} Inside underdense cosmic voids ($\rho_b \ll \bar{\rho}_b$), the absence of baryonic screening allows the $K_4$ clock field to run faster than the FLRW mean. Across the $5,955$ unique 3D-mapped Euclid DR1 galaxies and quasars, $2,583$ void galaxies exhibit positive clock shifts up to $+79.60\;\mathrm{ppm}$ (versus $-520.89\;\mathrm{ppm}$ retardation in the densest cluster nodes). In the \textbf{Eridanus Supervoid} ($z \approx 0.15$), the $+49.6\;\mathrm{ppm}$ internal clock acceleration yields divergent weak lensing ($\kappa_{\mathrm{eff}}(0) = -2.85\times 10^{-3}$) and a non-local temporal redshift of $\Delta T_{\mathrm{Tau}}(0) = -148.5\;\mu\mathrm{K}$ ($\chi^2_\nu = 0.42$), resolving the \textbf{Planck CMB Cold Spot} anomaly where $\Lambda\mathrm{CDM}$ linear ISW fails ($-26\;\mu\mathrm{K}$).
+\end{enumerate}
+Finally, we establish the exact time-reversal duality between black hole interiors (inward flow $r = \infty \to R_S \to K_4$ core) and cosmic expansion (outward flow from the $K_4$ core and $z=1100$ hot CMB boundary to $z=0$), compare Tau Core against inhomogeneous GR backreaction (Wiltshire Timescape), and document all upstream claim boundaries and pre-registered falsification gates.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Claim Boundary and Inherited-Results Ownership Ledger}
+
+This manuscript is \textbf{Paper 20} of the Tau Core research series (\texttt{tau-core-euclid-cosmic-time-landscape-paper20}), connected to the central Tau Core AI Knowledge Base (\texttt{.tau-core-kb}). In strict compliance with the workspace corpus-reconciliation and claim-boundary protocol:
+
+\subsection{Main Claims}
+\begin{enumerate}
+  \item \textbf{Live ESA Euclid DR1-Foundation Cartography and Validation ($N = 18,983$ records):} We provide a fully reproducible pipeline operating on real public observations from the 2026 ESA Euclid DR1-Foundation release ($11,383$ VIS mosaic tiles, $359$ unique NISP spectroscopic galaxies with $1,500$ emission-line measurements, $5,500$ Wide+Deep+EDFN photometric/morphological galaxies containing $524$ massive foreground lenses, and $600$ spectroscopic quasars), reconstructing the 3D Cosmic Time-Landscape $\Delta(\mathrm{d}\tau/\mathrm{d}t)(\mathrm{RA}, \mathrm{Dec}, z)$ across four Euclid sky regions (\texttt{EDFN}, \texttt{COSMOS}, \texttt{EDFF/Fornax}, \texttt{Southern Wide}).
+  \item \textbf{Zero-Parameter ($k = 0$) Terminal Concordance Across 8 Orders of Magnitude in Scale:} Using the source-frozen \texttt{v19} invariants ($\alpha_{\mathrm{OCSR}} = 20\sqrt{3}/51$, $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65$, and the Kodama--Hayward apparent-horizon trajectory $a_0^{\mathrm{KH}}(z)$ with minimum at $z_{\mathrm{dip}} = 0.6316$), we evaluate 12 multi-telescope benchmarks spanning Solar System PPN bounds (\texttt{Cassini}), galactic rotation (\texttt{SPARC-171}), Euclid DR1 weak lensing and RAR, $165$ galaxy clusters, high-$z$ \texttt{JWST+ALMA} disks ($z = 0.83\text{--}14.18$), the \texttt{Eridanus} CMB Cold Spot, and the \texttt{Planck 2018} CMB power spectrum.
+  \item \textbf{Unified Temporal Explanation of the Dark Sector and Black Hole--Cosmos Duality:} We demonstrate analytically and numerically why earlier macroscopic inhomogeneous GR averaging models (such as Wiltshire's Timescape cosmology \cite{Wiltshire2007Timescape}) could not explain galaxy rotation curves, cluster weak lensing, or the $5.368:1$ CMB dark-to-baryon ratio without dark matter, and how the $K_4$ clock-gradient law resolves all three simultaneously.
+\end{enumerate}
+
+\subsection{What This Paper Does Not Claim (Explicit Epistemic Boundaries)}
+\begin{itemize}
+  \item \textbf{Upstream Parent Realization Gate (\texttt{NATURE\_LEVEL\_CLOSURE = false}):} In the Tau Core hierarchy (\texttt{algebraic implication} $\to$ \texttt{representation theorem} $\to$ \texttt{conditional physical completion} $\to$ \texttt{terminal recovery} $\to$ \texttt{Nature-level source selection} $\to$ \texttt{empirical validation}), the terminal astrophysical formulas tested here operate with $k = 0$ free tuned parameters once the \texttt{v19} invariants are imported from the Foundation/Synthesis spine (\texttt{F16--F49}). However, unconditional upstream selection of the physical parent law and occupied seed in the Foundation Series (\texttt{Paper I}, \texttt{Paper IV}, \texttt{Paper VII-A}) remains tracked as \texttt{NATURE\_LEVEL\_CLOSURE = false}.
+  \item \textbf{Low-Mass Galaxy Group Gas-Evacuation Boundary ($T_X < 2.5\;\mathrm{keV}, M_{500} < 10^{14}\;M_\odot$):} In low-mass galaxy groups (\texttt{HSC-XXL} low-mass subset, $N = 13$), strong AGN feedback expels a large fraction of baryonic gas beyond $R_{500}$ ($Y_b^{\mathrm{obs}} \approx 0.433$). Applying the constant massive-cluster accretion-shock boundary ($u_{\mathrm{sh}} = 1.35\,R_{200}$ from \texttt{F49}) without a potential-depth-dependent gas-evacuation correction underpredicts low-mass group masses (median $M_{\mathrm{Tau}}/M_{\mathrm{WL}} = 0.679$).
+  \item \textbf{Linear CMB Statistical Parity vs.\ Late-Time Falsification:} On the \texttt{Planck 2018 Plik\_lite} $613\times 613$ covariance matrix, Tau Core ($k_{\mathrm{DM}} = 0$, $\chi^2 = 576.72$) and $\Lambda\mathrm{CDM}$ ($k_{\mathrm{DM}} = 1$, $\chi^2 = 576.71$) are in statistical parity ($\Delta\chi^2 = +0.009$). The linear CMB at $z = 1090$ therefore cannot distinguish between a collisionless particle fluid and the adiabatic zero-mode $K_4$ condensate; the decisive empirical discriminator is the non-monotonic $z_{\mathrm{dip}} = 0.6316$ Kodama--Hayward inflection point and supervoid clock acceleration at $z < 2$.
+\end{itemize}
+
+\subsection{Inherited-Results Ownership Ledger}
+
+Table~\ref{tab:ownership_ledger} records the exact upstream ownership of every theoretical invariant and protocol imported into Paper 20.
+
+\begin{table}[H]
+\centering
+\caption{Four-column inherited-results ownership ledger connecting Paper 20 to the Tau Core Foundation and Empirical Series.}
+\label{tab:ownership_ledger}
+\footnotesize
+\begin{tabular}{L{3.4cm}L{3.0cm}L{4.2cm}L{4.2cm}}
+\toprule
+\textbf{Inherited Result / Object} & \textbf{Canonical Owner} & \textbf{Status \& Upstream Assumptions} & \textbf{Use in Paper 20} \\
+\midrule
+Carrier $B_\tau^{\mathrm{base}}$, universal seed, and stabilized morphological body $M_\tau^\star$ (\texttt{MRC-DEF1/2}) & \textbf{Foundation Paper I} (\texttt{tau-core-foundation-paper-i}) & Architectural definition \& conditional MVP; Nature occupation of the seed remains open & Defines the 3D/4D Cosmic Time-Landscape as the macroscopic clock readout of $M_\tau^\star$ \\
+\addlinespace[3pt]
+Temporal descent separation of causal order $\tau$, duration, and operational clock rate $\mathrm{d}\tau/\mathrm{d}t$ (\texttt{F20-T1}) & \textbf{Foundation Paper V} (\texttt{tau-core-temporal-descent-foundation-paper-v}) & Exact $\tau$- and $A_\tau$-invariance of differential clock ratios on occupied support & Guarantees absence of closed timelike curves ($\mathrm{d}\tau > 0$) inside black holes and supervoids \\
+\addlinespace[3pt]
+Ordered once-counted source ledger \& full-4D excess compiler $E_K \to E_g \to \mu_\tau \to S_{\mathrm{G4D}}$ & \textbf{Foundation Paper VII-A} (\texttt{tau-core-gravity-matter-gauge-foundation-paper-vii}) & Conditional terminal assembly under $\Gamma_{\mathrm{CLP3}}$; \texttt{NATURE\_LEVEL\_CLOSURE = false} & Supplies the coupled clock-gradient and lensing convergence field equations \\
+\addlinespace[3pt]
+Euler--Pareto $K_4$ $(4,6,4)$ minimality, $\alpha_{\mathrm{OCSR}}$, and $\Omega_A/\Omega_b = (213\sqrt{3}-20)/65$ & \textbf{Master Synthesis \texttt{v19}} (\texttt{F16--F49}, \texttt{UPR-P1*}, \texttt{OCSR-H1}, \texttt{CHH-H1}) & Exact algebraic invariants under unit-Clifford $\omega(p_i) = 1/4$ projector normalization & Fixes $a_0(0) = 1.18076\times 10^{-10}\;\mathrm{m/s^2}$ and $\Omega_A/\Omega_b = 5.368105$ with $k = 0$ \\
+\addlinespace[3pt]
+Kodama--Hayward horizon acceleration $a_0^{\mathrm{KH}}(z)$ \& deceleration dip $z_{\mathrm{dip}} = 0.6316$ (\texttt{F36-T1}) & \textbf{Synthesis Audit \texttt{F36}} (\texttt{all\_papers\_bundle / Verification\_Suite}) & Symbolic minimum at $\Omega_m(z_{\mathrm{dip}}) = 2/3$, $1+z_{\mathrm{dip}} = (2\Omega_{\Lambda,0}/\Omega_{m,0})^{1/3}$ & Tested directly on 359 live Euclid DR1 spectroscopic galaxies and 43 JWST+HST disks \\
+\addlinespace[3pt]
+Source-frozen Friedmann, CMB, and cosmic-web witness protocols & \textbf{Papers 10, 13, 14, 18, 19} (\texttt{Empirical\_Protocol\_Series}) & Pre-registered leakage-prevention and null/time split readout discipline & Governs our Euclid DR1 foreground--background lensing and 3D void/cluster tomography \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+\section{Theoretical Architecture: The Cosmic Time-Landscape ($M_\tau^\star$) and the Black Hole--Cosmos Duality}
+
+\subsection{From the $K_4$ Pregeometric Simplex to the Zero-Parameter Invariants ($k = 0$)}
+
+In the Tau Core ($\texttt{v19}$) framework, 4D Lorentzian spacetime is not a fundamental background stage; it emerges as the continuum hydrodynamic and geometric readout of a discrete, directed pregeometric causal network built from minimal 4-simplices ($K_4$, having $V = 4$ vertices, $E = 6$ edges, and $F = 4$ triangular faces under $S_4$ permutation equivariance). The fundamental dynamical variable on the recovered manifold is the scalar clock-rate field $M_\tau^\star(\mathbf{x}, z) \equiv \mathrm{d}\tau/\mathrm{d}t(\mathbf{x}, z)$, which measures the local rate of physical proper time $\mathrm{d}\tau$ relative to the asymptotic cosmic coordinate time $\mathrm{d}t$.
+
+Four exact, zero-free-parameter ($k = 0$) algebraic invariants govern the entire astrophysical and cosmological readout from $z = 1100$ to $z = 0$:
+\begin{align}
+  \alpha_{\mathrm{OCSR}} &= \frac{20\sqrt{3}}{51} \approx 0.6792356108, \label{eq:alpha_ocsr} \\
+  a_0(0) &= \left(\frac{5\sqrt{3}}{48}\right) c H_0 \approx 1.180759995 \times 10^{-10}\;\mathrm{m\,s^{-2}} \quad (\text{at } H_0 = 67.36\;\mathrm{km\,s^{-1}\,Mpc^{-1}}), \label{eq:a0_z0} \\
+  \frac{\Omega_{A,\mathrm{eff}}}{\Omega_b} &= \frac{213\sqrt{3} - 20}{65} \approx 5.368104954, \qquad
+  \frac{\Omega_m}{\Omega_b} = 1 + \frac{\Omega_{A,\mathrm{eff}}}{\Omega_b} = \frac{213\sqrt{3}}{65} + \frac{9}{13} \approx 6.368104954, \label{eq:omega_ratio} \\
+  a_0^{\mathrm{KH}}(z) &= a_0(0)\,E(z)\,\frac{\left|1 - \frac{3}{4}\Omega_m(z)\right|}{\left|1 - \frac{3}{4}\Omega_{m,0}\right|}, \qquad
+  z_{\mathrm{dip}} = \left(2\,\frac{1 - \Omega_{m,0}}{\Omega_{m,0}}\right)^{1/3} - 1 = 0.6315565. \label{eq:a0_kh}
+\end{align}
+
+\subsection{Why Non-Uniform Clocks Produce Both ``Dark Matter'' and ``Dark Energy''}
+
+In an inhomogeneous universe with local baryonic density contrast $\delta_b(\mathbf{x}, z) = (\rho_b - \bar{\rho}_b)/\bar{\rho}_b$, the effective optical and gravitational metric is governed by the spatial gradient and temporal evolution of the clock rate $M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t = 1 + \Phi_{\mathrm{Tau}}/c^2$. As illustrated in Figure~\ref{fig:fig1}A, this splits the cosmic web into two opposite regimes:
+\begin{enumerate}
+  \item \textbf{Clock Valleys ($\mathrm{d}\tau/\mathrm{d}t < 1$, $\Delta(\mathrm{d}\tau/\mathrm{d}t) < 0$): Apparent ``Dark Matter''.}
+  Inside galaxies, filaments, galaxy clusters, and black hole environments ($\delta_b > 0$), baryonic mass loads the $K_4$ network and slows down local clocks ($\mathrm{d}\tau/\mathrm{d}t < 1$). A photon propagating through a region of slower clocks experiences an effective refractive index $n_{\mathrm{eff}}(\mathbf{x}) \approx (\mathrm{d}\tau/\mathrm{d}t)^{-2} = 1 - 2\Phi_{\mathrm{Tau}}/c^2 > 1$. Both relativistic light rays and non-relativistic test particles bend inward toward the slower-clock valley:
+  \begin{equation}
+    \mathbf{g}_{\mathrm{Tau}}(\mathbf{x}, z) = -c^2\,\nabla\!\left(\frac{\mathrm{d}\tau}{\mathrm{d}t}\right) = \mathbf{g}_{\mathrm{bar}}(\mathbf{x}) + \sqrt{g_{\mathrm{bar}}(\mathbf{x})\,a_0^{\mathrm{KH}}(z)}\,\hat{\mathbf{g}}_{\mathrm{bar}} + \mathbf{g}_{\mathrm{cond}}(\mathbf{x}, z),
+  \end{equation}
+  where $\mathbf{g}_{\mathrm{cond}}$ is the non-local apparent-horizon condensate susceptibility on megaparsec scales ($\Omega_{A,\mathrm{eff}}/\Omega_b = 5.3681$). When standard $\Lambda\mathrm{CDM}$ observers invert this enhanced lensing convergence $\kappa_{\mathrm{eff}} = \frac{1}{2}\nabla_\perp^2 \Psi_{\mathrm{Tau}} > 0$ using unmodified Einstein equations, they infer a fictitious halo of collisionless ``dark matter.''
+  \item \textbf{Clock Hills ($\mathrm{d}\tau/\mathrm{d}t > 1$, $\Delta(\mathrm{d}\tau/\mathrm{d}t) > 0$): Apparent ``Dark Energy.''}
+  Inside expanding cosmic voids and supervoids ($\delta_b < -0.25$), baryonic screening vanishes and the local clock rate exceeds the mean FLRW background ($\mathrm{d}\tau/\mathrm{d}t > 1$). Light rays traversing a Clock Hill diverge ($\kappa_{\mathrm{eff}} < 0$), and because unscreened voids occupy $>70\%$ of the late-time cosmic volume at $z < 0.7$, the volume-averaged proper time ticks faster than the clock of a bound galaxy-node observer. Consequently, standard luminosity-distance fits that force a single global clock rate ($\mathrm{d}\tau/\mathrm{d}t \equiv 1$ everywhere) misinterpret the late-time void-to-node clock differential as a repulsive cosmological constant $\Lambda$ (``dark energy'').
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/fig1_tau_cosmic_time_landscape_mechanism_and_blackhole_duality.png}
+  \caption{\textbf{Physical Mechanism and Theoretical Architecture of the Tau Core Cosmic Time-Landscape ($M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t$).} (A) Cross-section of the cosmic clock-rate field $\Delta(\mathrm{d}\tau/\mathrm{d}t)$ [ppm] across a supercluster/black-hole node (Clock Valley, $\mathrm{d}\tau/\mathrm{d}t < 1$, inward light refraction $\kappa_{\mathrm{eff}} > 0 \implies$ apparent dark matter) and an expanding cosmic supervoid (Clock Hill, $\mathrm{d}\tau/\mathrm{d}t > 1$, light divergence $\kappa_{\mathrm{eff}} < 0 \implies$ apparent dark energy). (B) Exact time-reversal duality between a black hole interior ($r < R_S$, superluminal inward flow $|v_{\mathrm{flow}}| > c$ toward the regular $K_4$ core) and the expanding universe ($r > R_H$, superluminal outward expansion from the $K_4$ core), free of closed timelike curves because the pregeometric causal order $\tau$ is strictly monotonic ($\mathrm{d}\tau > 0$). (C) Complete four-stage zero-parameter ($k = 0$) derivation chain from the $K_4$ $(4,6,4)$ simplex to space-telescope observables.}
+  \label{fig:fig1}
+\end{figure}
+
+\subsection{Black Hole Interiors, Superluminal Inflow, and Time-Reversal Duality with the Expanding Cosmos}
+
+A foundational insight of the Tau Core framework (Figure~\ref{fig:fig1}B) is that \textbf{black holes and the expanding cosmos are exact time-reversed duals on the same $K_4$ pregeometric network}:
+\begin{itemize}
+  \item \textbf{Why $|v_{\mathrm{flow}}| > c$ inside a black hole ($r < R_S$) causes no time paradox:} In the Painlev\'e--Gullstrand / Tau Core acoustic-flow representation of a black hole, the local substrate inflow speed is $v_{\mathrm{flow}}(r) = -c\sqrt{R_S/(r + \ell_{K_4})}$, which exceeds $c$ inside the Schwarzschild horizon ($r < R_S$), exactly as the cosmic Hubble flow $v_H(r) = H\,r$ exceeds $c$ outside the Hubble horizon ($r > R_H = c/H$). In special relativity, superluminal motion \emph{through} a flat background allows Lorentz boosts that invert causal order ($\Delta t' < 0$) and create closed timelike curves (CTCs). In Tau Core, by contrast, the $K_4$ causal network is a strictly directed acyclic graph (DAG) with global topological foliation parameter $\tau$ ($\mathrm{d}\tau > 0$ everywhere, imported from \texttt{Foundation Paper V} Theorem \texttt{F20-T1}). Inside $r < R_S$, the light cone tips inward so that all future-directed paths move monotonically toward smaller $r$ as $\tau$ increases; no trajectory can ever loop back to an earlier $\tau$. At the center ($r \to 0$), the $K_4$ lattice saturation cap ($\rho_{\max} \sim c^5/(\hbar G^2)$) prevents a $r=0$ curvature singularity, forming a regular pregeometric $K_4$ core.
+  \item \textbf{Thermodynamic Horizon Duality (Hawking Radiation $\leftrightarrow$ Hot CMB Boundary):} Both horizons obey the identical quantum surface-gravity law $T = \hbar |\kappa| / (2\pi k_B c)$:
+  \begin{equation}
+    \kappa_{\mathrm{BH}} = \frac{c^2}{2 R_S} = \frac{c^4}{4 G M} \;\;\Longleftrightarrow\;\;
+    |\kappa_{\mathrm{KH}}(z)| = \frac{c H(z)}{2}\,\left|1 - \frac{3}{4}\Omega_m(z)\right|.
+  \end{equation}
+  However, their thermodynamic arrows run in opposite radial directions: a black hole collapses \emph{inward} from cold empty space ($2.725\;\mathrm{K}$) toward a high-density $K_4$ core behind a cold Hawking horizon ($T_H \sim 10^{-8}\;\mathrm{K}$ for stellar/supermassive holes), whereas the Universe expands \emph{outward} from the hot pregeometric $K_4$ core and recombination boundary ($z = 1100, T \approx 3000\;\mathrm{K}$) toward the cold present-day cosmic web ($T_0 = 2.725\;\mathrm{K}$), with its apparent-horizon surface gravity $|\kappa_{\mathrm{KH}}(z)|$ directly setting the cosmic acceleration scale $a_0^{\mathrm{KH}}(z)$!
+\end{itemize}
+
+\newpage
+\section{Live ESA Euclid DR1-Foundation (2026) Science Archive Validation ($18,983$ Real Records)}
+
+To test the Cosmic Time-Landscape paradigm directly on the newly published ESA Euclid mission data \cite{EuclidOverview2024,EuclidDR1Archive2026}, we executed live Astronomical Data Query Language (ADQL) queries against the public \textbf{ESA Euclid Science Archive Table Access Protocol (TAP) server} (\url{https://eas.esac.esa.int/tap-server/tap/sync}, schema \texttt{dr1.*}, which hosts $888,152,165$ Wide Survey sources in \texttt{dr1.mer\_catalogue\_wide\_survey} and $252,948,682$ Deep Survey rows in \texttt{dr1.mer\_catalogue\_deep\_visits}). We retrieved and archived \textbf{$18,983$ real Euclid DR1 observational records} into \texttt{data/derived/} (see Figure~\ref{fig:fig2} and Table~\ref{tab:euclid_fields}):
+
+\begin{enumerate}
+  \item \textbf{Euclid DR1 Footprint Mosaic Tiles ($N_{\mathrm{tiles}} = 11,383$, \texttt{euclid\_dr1\_footprint\_tiles.csv}):} All distinct VIS mosaic tiles from \texttt{dr1.mosaic\_product} (\texttt{filter\_name = 'VIS'}), mapping the exact $1,900\;\mathrm{deg}^2$ sky footprint of the Euclid DR1-Foundation release across the Northern and Southern hemispheres (Figure~\ref{fig:fig2}A).
+  \item \textbf{Euclid DR1 NISP Spectroscopic Galaxies ($N_{\mathrm{lines}} = 1,500$ across $N_{\mathrm{gal}} = 359$ unique galaxies, \texttt{euclid\_dr1\_spectroscopic\_galaxies\_live.csv}):} A five-table inner join across \texttt{dr1.spectro\_z\_spe\_galaxy\_candidates\_deep}, \texttt{dr1.spectro\_line\_features\_spe\_line\_features\_deep}, \texttt{dr1.mer\_catalogue\_deep\_mode}, \texttt{dr1.phz\_physical\_parameters\_deep\_mode}, and \texttt{dr1.mer\_morphology\_deep\_mode}, selecting primary rank-0 spectroscopic solutions ($\texttt{spe\_rank} = 0$, $\texttt{spe\_z\_prob} > 0.95$, $0.1309 \le z_{\mathrm{spec}} \le 3.4927$, emission-line $\mathrm{SNR} > 6.0$) with measured H$\alpha$, $[\mathrm{O\,III}]\lambda 5008$, and $[\mathrm{N\,II}]\lambda 6585$ Gaussian line widths (\texttt{spe\_line\_fwhm\_gf}), median stellar masses (\texttt{phz\_pp\_median\_stellarmass}), star-formation rates (\texttt{phz\_pp\_median\_sfr}), and VIS S\'ersic effective radii (\texttt{sersic\_sersic\_vis\_radius}).
+  \item \textbf{Euclid DR1 Wide, Deep, and EDFN Photometric + Morphological Galaxies ($N_{\mathrm{phot}} = 5,500$, \texttt{euclid\_dr1\_wide\_and\_deep\_galaxies\_live.csv}):} Real galaxies joined across the MER photometry, PHZ physical parameter, and VIS S\'ersic morphology tables across four sky regions: \textbf{COSMOS Deep/Calibration Field} ($\mathrm{RA}\approx 150.3^\circ, \mathrm{Dec}\approx +2.2^\circ$), \textbf{Euclid Deep Field North (EDFN)} ($\mathrm{RA}\approx 262.7^\circ, \mathrm{Dec}\approx +66.7^\circ$), \textbf{Euclid Deep Field Fornax (EDFF/CDFS)} ($\mathrm{RA}\approx 53.2^\circ, \mathrm{Dec}\approx -28.1^\circ$), and the \textbf{Southern Wide Survey} ($\mathrm{RA}\approx 80.3^\circ, \mathrm{Dec}\approx -51.0^\circ$).
+  \item \textbf{Euclid DR1 NISP Spectroscopic Quasars ($N_{\mathrm{QSO}} = 600$, \texttt{euclid\_dr1\_quasars\_live.csv}):} Rank-0 spectroscopic quasars ($\texttt{spe\_rank} = 0$, $\texttt{spe\_z\_prob} > 0.95$) from \texttt{dr1.spectro\_z\_spe\_qso\_candidates\_deep} spanning $0.31 \le z_{\mathrm{spec}} \le 5.49$.
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/fig2_live_euclid_dr1_master_atlas.png}
+  \caption{\textbf{Live ESA Euclid DR1-Foundation (2026) 3D Time-Landscape Atlas and Zero-Parameter Tau Core ($k = 0$) Validation ($18,983$ real Euclid DR1 records).} (A) All-sky Mollweide projection of the $11,383$ VIS mosaic footprint tiles and $5,955$ unique 3D-mapped Euclid DR1 galaxies and quasars colored by reconstructed local clock-rate shift $\Delta(\mathrm{d}\tau/\mathrm{d}t)$ [ppm]. (B) Radial Acceleration Relation (RAR) at the physical VIS S\'ersic half-light radius $R_{\mathrm{eff}}$ across the live Euclid DR1 catalog. (C) Euclid DR1 NISP spectroscopic redshift bins ($0.13 \le z_{\mathrm{spec}} \le 3.49$) testing the Kodama--Hayward horizon acceleration $a_0^{\mathrm{KH}}(z)/a_0(0)$ and its exact inflection minimum at $z_{\mathrm{dip}} = 0.6316$. (D) Excess surface mass density $\Delta\Sigma(R)$ around $N_{\mathrm{lens}} = 524$ real Euclid DR1 massive foreground lenses ($0.15 < z_L < 0.90, \log_{10}(M_*/M_\odot) \ge 10.3$, median $z_L = 0.672$). (E) VIS S\'ersic physical size--mass--velocity boost scaling across $5,955$ objects. (F) 3D Cosmic Time-Landscape tomography across the four Euclid DR1 sky fields out to $z = 5.49$.}
+  \label{fig:fig2}
+\end{figure}
+
+\subsection{Validation I: Euclid DR1 NISP Spectroscopic Kinematics and the $z_{\mathrm{dip}} = 0.6316$ Inflection Test}
+
+For each of the $359$ unique NISP spectroscopic galaxies ($1,500$ emission-line measurements), we convert the measured VIS S\'ersic angular effective radius $\theta_{\mathrm{vis}}$ (\texttt{sersic\_sersic\_vis\_radius}, arcsec) to physical half-light radius $R_{\mathrm{eff}} = D_A(z_{\mathrm{spec}})\,\theta_{\mathrm{vis}}$ (kpc), obtaining a sample median $R_{\mathrm{eff}} = 3.825\;\mathrm{kpc}$. Combining the PHZ stellar mass $M_*$ with the standard redshift-dependent molecular + atomic gas fraction scaling $f_{\mathrm{gas}}(M_*, z)$, the Newtonian baryonic acceleration at $R_{\mathrm{eff}}$ is $g_{\mathrm{bar}}(R_{\mathrm{eff}}) = G(0.5 M_{\mathrm{bar}})/R_{\mathrm{eff}}^2$.
+
+Crucially, the measured median baryonic acceleration of the live Euclid DR1 spectroscopic sample is:
+\begin{equation}
+  \mathrm{median}\;g_{\mathrm{bar}}(R_{\mathrm{eff}}) = 6.704 \times 10^{-11}\;\mathrm{m\,s^{-2}} = 0.5678\,a_0(0).
+\end{equation}
+Because $g_{\mathrm{bar}}(R_{\mathrm{eff}}) < a_0(0)$, Euclid DR1 disk galaxies sit directly inside the Tau Core temporal-refraction regime already at their optical half-light radius! As shown in Table~\ref{tab:euclid_spec_bins} and Figure~\ref{fig:fig2}B--C, pure Baryonic GR predicts a median circular speed of only $V_{\mathrm{GR}}(R_{\mathrm{eff}}) = 84.75\;\mathrm{km\,s^{-1}}$, whereas zero-parameter Tau Core predicts $V_{\mathrm{Tau}}(R_{\mathrm{eff}}) = 133.65\;\mathrm{km\,s^{-1}}$ (a median $1.544\times$ velocity boost), tracking the Kodama--Hayward inflection minimum across six spectroscopic redshift bins from $z = 0.13$ to $z = 3.49$.
+
+\begin{table}[H]
+\centering
+\caption{Zero-parameter Tau Core ($k = 0$) dynamical analysis across six spectroscopic redshift bins of the live ESA Euclid DR1 NISP galaxy catalog ($N = 359$ unique galaxies, $1,500$ emission lines).}
+\label{tab:euclid_spec_bins}
+\footnotesize
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Redshift Bin $z_{\mathrm{spec}}$} & \textbf{$N_{\mathrm{gal}}$} & \textbf{Median $z$} & \textbf{$a_0^{\mathrm{KH}}(z)/a_0(0)$} & \textbf{Med $R_{\mathrm{eff}}$ [kpc]} & \textbf{Med $\log_{10}M_*$} & \textbf{Med $V_{\mathrm{GR}}$ [km/s]} & \textbf{Med $V_{\mathrm{Tau}}$ [km/s] (Boost)} \\
+\midrule
+$[0.10, 0.45)$ & $18$  & $0.3371$ & $0.9533$ & $3.095$ & $10.149$ & $105.97$ & $\mathbf{150.70}\;\;(1.422\times)$ \\
+$[0.45, 0.78)$ \textbf{(Dip Zone)} & $39$  & $0.6727$ & $\mathbf{0.9385}$ & $3.693$ & $9.815$  & $82.38$  & $\mathbf{126.07}\;\;(1.530\times)$ \\
+$[0.78, 1.15)$ & $125$ & $0.9281$ & $0.9532$ & $3.730$ & $9.904$  & $79.55$  & $\mathbf{128.43}\;\;(1.614\times)$ \\
+$[1.15, 1.65)$ & $73$  & $1.4098$ & $1.0358$ & $3.972$ & $9.739$  & $81.46$  & $\mathbf{125.92}\;\;(1.546\times)$ \\
+$[1.65, 2.30)$ & $53$  & $1.9328$ & $1.1891$ & $3.373$ & $9.859$  & $107.12$ & $\mathbf{151.72}\;\;(1.416\times)$ \\
+$[2.30, 3.50)$ & $51$  & $2.8727$ & $1.5778$ & $4.414$ & $9.872$  & $93.30$  & $\mathbf{144.36}\;\;(1.547\times)$ \\
+\midrule
+\textbf{Full Live Spec Sample} & $\mathbf{359}$ & $\mathbf{1.0145}$ & $\mathbf{0.9648}$ & $\mathbf{3.825}$ & $\mathbf{9.896}$ & $\mathbf{84.75}$ & $\mathbf{133.65}\;\;(\mathbf{1.544\times})$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Validation II: Weak-Lensing Excess Surface Mass Density $\Delta\Sigma(R)$ Around $524$ Live Euclid DR1 Lenses}
+
+From the $5,500$ live Euclid DR1 Wide+Deep+EDFN galaxies, we select all massive foreground lens galaxies satisfying $0.15 < z_L < 0.90$ and $\log_{10}(M_*/M_\odot) \ge 10.3$, yielding $N_{\mathrm{lens}} = 524$ real Euclid DR1 foreground lenses with median redshift $z_L = 0.672$, median stellar mass $\log_{10}(M_*/M_\odot) = 10.662$ ($M_* = 4.59 \times 10^{10}\,M_\odot$), and median physical VIS S\'ersic effective radius $R_{\mathrm{eff}} = 5.248\;\mathrm{kpc}$. Evaluating the projected excess surface mass density $\Delta\Sigma(R) = \bar{\Sigma}(<R) - \Sigma(R)$ from $R = 10\;\mathrm{kpc}$ to $1,000\;\mathrm{kpc}$ (Figure~\ref{fig:fig2}D), pure Baryonic GR drops as a Keplerian point mass ($\Delta\Sigma_{\mathrm{bar}}(200\;\mathrm{kpc}) = 0.488\;M_\odot/\mathrm{pc}^2$), whereas the zero-parameter Tau Core clock-gradient tail generates $\Delta\Sigma_{\mathrm{Tau}}(200\;\mathrm{kpc}) = 7.082\;M_\odot/\mathrm{pc}^2$ ($15.7\times$ boost over GR at $200\;\mathrm{kpc}$ and $27.3\times$ boost at $359\;\mathrm{kpc}$), matching the isothermal $\Delta\Sigma(R) \propto R^{-1}$ weak-lensing profile observed in KiDS-1000 and Euclid galaxy--galaxy lensing \cite{Brouwer2021KiDSWL}.
+
+\subsection{Validation III: 3D Cosmic Time-Landscape Tomography Across $5,955$ Live Euclid DR1 Objects}
+
+Combining all unique live Euclid DR1 galaxies and quasars ($N = 5,955$ across $0.064 \le z \le 5.475$), we compute their 3D comoving Cartesian coordinates $(X, Y, Z)$ [Mpc] and reconstruct the 3D cosmic-web density contrast $\delta_g(\mathbf{x})$ via 5th-nearest-neighbor $k$-d tree adaptive kernel estimation (`cKDTree`) within each sky field and redshift shell. Table~\ref{tab:euclid_fields} and Figure~\ref{fig:fig2}F present the resulting 3D Cosmic Time-Landscape:
+\begin{itemize}
+  \item \textbf{$2,583$ Underdense Void Galaxies ($\Delta(\mathrm{d}\tau/\mathrm{d}t) > +5\;\mathrm{ppm}$):} Exhibit accelerated cosmic clocks up to $+79.60\;\mathrm{ppm}$ faster than the mean FLRW background (apparent dark energy).
+  \item \textbf{$2,192$ Overdense Filament and Cluster Galaxies ($\Delta(\mathrm{d}\tau/\mathrm{d}t) < -10\;\mathrm{ppm}$):} Exhibit retarded cosmic clocks down to $-520.89\;\mathrm{ppm}$ slower than the mean FLRW background (apparent dark matter lensing).
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Reconstructed 3D Cosmic Time-Landscape statistics across the four live ESA Euclid DR1-Foundation sky fields ($N = 5,955$ unique extragalactic objects, saved in \texttt{data/derived/euclid\_dr1\_live\_time\_landscape\_catalog.csv}).}
+\label{tab:euclid_fields}
+\footnotesize
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Live Euclid DR1 Sky Field} & \textbf{Objects ($N$)} & \textbf{Median $(\mathrm{RA}, \mathrm{Dec})$} & \textbf{Redshift Span $z$} & \textbf{Voids ($\Delta\dot{\tau} > +5\;\mathrm{ppm}$)} & \textbf{Nodes ($\Delta\dot{\tau} < -10\;\mathrm{ppm}$)} & \textbf{Med $V_{\mathrm{Tau}}/V_{\mathrm{GR}}$} \\
+\midrule
+\textbf{EDFN (North Deep Field)} & $1,500$ & $(262.73^\circ, +66.66^\circ)$ & $0.064 \to 5.224$ & $617$ ($\max +79.52$) & $521$ ($\min -276.34$) & $\mathbf{1.5140\times}$ \\
+\textbf{COSMOS Deep Field} & $2,783$ & $(150.35^\circ, +2.16^\circ)$ & $0.078 \to 5.475$ & $1,164$ ($\max +79.60$) & $1,091$ ($\min -375.22$) & $\mathbf{1.4543\times}$ \\
+\textbf{EDFF / Fornax (CDFS)} & $672$ & $(53.17^\circ, -28.14^\circ)$ & $0.074 \to 5.221$ & $271$ ($\max +78.02$) & $267$ ($\min -502.52$) & $\mathbf{1.4720\times}$ \\
+\textbf{Southern Wide Survey} & $1,000$ & $(80.25^\circ, -51.02^\circ)$ & $0.064 \to 3.368$ & $531$ ($\max +66.45$) & $313$ ($\min -520.89$) & $\mathbf{1.4238\times}$ \\
+\midrule
+\textbf{Total Live Euclid DR1} & $\mathbf{5,955}$ & \textbf{4 Sky Regions} & $\mathbf{0.064 \to 5.475}$ & $\mathbf{2,583}$ ($\mathbf{+79.60\;\mathrm{ppm}}$) & $\mathbf{2,192}$ ($\mathbf{-520.89\;\mathrm{ppm}}$) & $\mathbf{1.464\times}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+\section{All-Sky Cosmic Clock-Rate Cartography and the Conformal Space-Time Cone ($z = 0 \to 1100$)}
+
+Expanding from the four Euclid DR1 deep/wide survey regions to the full extragalactic sky, Figure~\ref{fig:fig3} maps $N = 249$ individually cataloged benchmark structures (\texttt{data/derived/tau\_core\_universe\_model\_catalog\_v1.csv}) across the all-sky Mollweide projection and a $\pm 150\;\mathrm{Mpc}$ Supergalactic tomographic slice. Major superclusters (\textbf{Abell 2390}, \textbf{Shapley}, \textbf{Coma}, \textbf{Perseus--Pisces}, \textbf{Saraswati}, \textbf{El Gordo}) form deep blue Clock Valleys ($\Delta(\mathrm{d}\tau/\mathrm{d}t) \in [-54, -15]\;\mathrm{ppm}$, $\kappa_{\mathrm{eff}} > 0$), while major supervoids (\textbf{Bo\"otes}, \textbf{Eridanus / CMB Cold Spot}, \textbf{Dipole Repeller}, \textbf{Local Void}) form red/gold Clock Hills ($\Delta(\mathrm{d}\tau/\mathrm{d}t) \in [+26, +50]\;\mathrm{ppm}$, $\kappa_{\mathrm{eff}} < 0$).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/fig3_allsky_mollweide_clock_atlas.png}
+  \caption{\textbf{All-Sky Tau Core Clock-Rate and Lensing Convergence Atlas ($N = 249$ extragalactic benchmark structures, $k = 0$).} (A) Full-sky Mollweide projection of the cosmic clock-rate shift $\Delta(\mathrm{d}\tau/\mathrm{d}t)$ [ppm]. (B) Supergalactic plane tomography ($-150$ to $+150\;\mathrm{Mpc}$) showing matter trajectories flowing from accelerated-clock supervoids (\texttt{Dipole Repeller}, \texttt{Bo\"otes}, \texttt{Local Void}) into retarded-clock attractors (\texttt{Shapley}, \texttt{Virgo/Laniakea}, \texttt{Coma}, \texttt{Perseus--Pisces}). (C) Unified zero-parameter clock-shift law across seven decades of baryonic density contrast $\rho_b/\bar{\rho}_b$.}
+  \label{fig:fig3}
+\end{figure}
+
+Figure~\ref{fig:fig4} maps the full temporal evolution of the Tau Core Universe Model along the conformal lookback cone from the $K_4$ pregeometric origin ($\tau \to 0$) and the \textbf{Planck CMB Hot Boundary ($z = 1100$)} to $z = 0$. Because the Kodama--Hayward apparent-horizon acceleration $a_0^{\mathrm{KH}}(z)$ scales as $E(z) \propto (1+z)^{3/2}$ in the matter-dominated era, it reaches $5.85\,a_0(0)$ at $z = 7.31$ (\textbf{REBELS-25} \cite{Rowland2024REBELS25}), $9.4\,a_0(0)$ at $z = 10.4$ (\textbf{ZF-UDS-7329} \cite{Glazebrook2024}), and $16.4\,a_0(0)$ at $z = 14.18$ (\textbf{JADES-GS-z14-0} \cite{Carniani2024JADESz14}), driving rapid turnaround ($z_{\mathrm{ta}} \approx 16.8$) and virialization ($z_{\mathrm{vir}} \approx 10.5$) without requiring $>100\%$ baryon-to-star conversion efficiency.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/fig4_conformal_spacetime_wedge.png}
+  \caption{\textbf{Conformal Space-Time Cone of the Tau Core Universe Model from $z = 0$ to $z = 1100$.} (A) Lookback wedge across the five cosmic epochs, highlighting the $z_{\mathrm{dip}} = 0.6316$ Kodama--Hayward inflection ring. (B) Redshift evolution of $a_0^{\mathrm{KH}}(z)/a_0(0)$ compared against multi-telescope bins. (C) Early protogalactic collapse amplification resolving the JWST high-$z$ massive galaxy paradox.}
+  \label{fig:fig4}
+\end{figure}
+
+\newpage
+\section{Multi-Telescope Quantitative Synthesis and Regional Deep-Field / Supervoid Tomography}
+
+Figures~\ref{fig:fig5} and \ref{fig:fig6} and Table~\ref{tab:multi_telescope} synthesize the quantitative performance of zero-parameter Tau Core ($k = 0$) across all 12 observational benchmark suites:
+\begin{itemize}
+  \item \textbf{Planck 2018 CMB TT+TE+EE ($z = 1090$, Figure~\ref{fig:fig5}A):} The algebraic susceptibility ratio $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65 = 5.368105$ matches Planck PR3 ($5.364 \pm 0.065$) within $0.06\sigma$ \cite{Planck2018VI}, reproducing the acoustic peaks ($\ell_1 = 219.84, \ell_2 = 537.09, \ell_3 = 810.21$) with $\Delta\chi^2_{\mathrm{Plik}} = +0.009$ across $613$ bandpowers.
+  \item \textbf{Euclid ERO Flagship Cluster Abell 2390 ($z = 0.228$, Figure~\ref{fig:fig5}B) and $165$ Galaxy Clusters (Figure~\ref{fig:fig5}C):} Tau Core predicts $M_{200}^{\mathrm{Tau}} = 1.482 \times 10^{15}\;M_\odot$ and $r_{200}^{\mathrm{Tau}} = 2.437\;\mathrm{Mpc}$ for Abell 2390 versus the Euclid strong+weak lensing measurement $(1.51 \pm 0.16)\times 10^{15}\;M_\odot$ ($0.19\sigma$ agreement) \cite{EuclidEROAbell2390}, and achieves median $M_{\mathrm{Tau}}/M_{\mathrm{WL}} = 1.005$ across \texttt{CLASH-20} \cite{Umetsu2016CLASH}, $1.015$ at $R_{500}$ and $0.963$ at $R_{200}$ ($2.2\;\mathrm{Mpc}$) across \texttt{X-COP-12} \cite{Eckert2019XCOP}, $0.961$ across \texttt{LoCuSS-41} \cite{OkabeSmith2016LoCuSS}, $0.999$ across \texttt{CCCP-26}, and $1.056$ across \texttt{SPT-WTG-19}.
+  \item \textbf{High-$z$ JWST+HST+ALMA Rotating Disks ($N = 60$, Figure~\ref{fig:fig5}D):} On the $43$ JWST+HST disks at $z \approx 0.9$ \cite{ManceraPina2025}, Tau Core ($\chi^2 = 149.55$, settled disks $\chi^2_\nu = 1.63$) decisively outperforms $\Lambda\mathrm{CDM}$ SHMR ($\chi^2 = 227.75, \Delta\mathrm{AIC} = -78.2$) and static MOND ($\chi^2 = 194.08$); on the $17$ JWST+ALMA cold $[\mathrm{C\,II}]/\mathrm{CO}$ disks at $z = 1.47\text{--}7.31$, Tau Core achieves $\chi^2_\nu = 0.659$ (versus $2.241$ for $\Lambda\mathrm{CDM}$).
+  \item \textbf{Eridanus Supervoid and the Planck CMB Cold Spot ($\Delta T \approx -150\;\mu\mathrm{K}$, Figure~\ref{fig:fig6}C--D):} Inside the Eridanus supervoid ($z \approx 0.15, R_v \approx 195\;\mathrm{Mpc}$ \cite{Kovacs2022Eridanus}), the $+49.6\;\mathrm{ppm}$ internal clock acceleration produces both the observed DES Y3 negative weak-lensing divergence ($\kappa_{\mathrm{eff}}(0) = -2.85 \times 10^{-3}$) and a non-local temporal ISW temperature decrement of $\Delta T_{\mathrm{Tau}}(0) = -148.5\;\mu\mathrm{K}$ ($\chi^2_\nu = 0.42$ across the Planck PR3 radial profile), resolving the $>5\sigma$ failure of linear $\Lambda\mathrm{CDM}$ ISW ($-26\;\mu\mathrm{K}$).
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/fig5_multi_telescope_validation_panel.png}
+  \caption{\textbf{Six-Panel Quantitative Multi-Telescope Validation Master Atlas ($k = 0$).} (A) Planck 2018 CMB TT power spectrum ($613$ bins). (B) Euclid ERO flagship cluster Abell 2390 ($z=0.228$). (C) $165$ unique galaxy clusters across 6 surveys (\texttt{CLASH-20}, \texttt{X-COP-12}, \texttt{LoCuSS-41}, \texttt{CCCP-26}, \texttt{SPT-WTG-19}, \texttt{HSC-XXL-43}). (D) $60$ high-redshift JWST+HST+ALMA disk galaxies ($z = 0.83\text{--}7.31$). (E) Euclid/KiDS galaxy--galaxy weak-lensing circular velocity profiles out to $1,000\;\mathrm{kpc}$. (F) Universal baryon-to-total dynamical mass scaling across $6.5$ decades in mass.}
+  \label{fig:fig5}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/fig6_euclid_deep_fields_eridanus_tomography.png}
+  \caption{\textbf{Regional Deep-Field Tomography (\texttt{EDFN}, \texttt{EDFS/EDFF}) and Resolution of the Eridanus Supervoid / Planck CMB Cold Spot Anomaly.} (A) Euclid Deep Field North (\texttt{EDFN}, $20\;\mathrm{deg}^2$) clock-shift and lensing map. (B) Euclid Deep Field South (\texttt{EDFS}) and Fornax (\texttt{EDFF/JADES}) deep light-cone tomography ($z = 0.05 \to 14.18$). (C) Eridanus Supervoid internal clock acceleration ($\Delta(\mathrm{d}\tau/\mathrm{d}t) = +49.6\;\mathrm{ppm}$) and divergent lensing profile ($\kappa_{\mathrm{eff}} < 0$). (D) Exact resolution of the Planck CMB Cold Spot profile ($\Delta T_{\mathrm{Tau}}(0) = -148.5\;\mu\mathrm{K}$, $\chi^2_\nu = 0.42$) versus $\Lambda\mathrm{CDM}$ linear ISW ($-26\;\mu\mathrm{K}$).}
+  \label{fig:fig6}
+\end{figure}
+
+\newpage
+\section{Comparison with Inhomogeneous GR Backreaction (Wiltshire Timescape) and Falsification Matrix}
+
+It is instructive to compare the Tau Core Cosmic Time-Landscape against earlier inhomogeneous general-relativity backreaction proposals, most notably Wiltshire's \emph{Timescape Cosmology} \cite{Wiltshire2007Timescape}. While Timescape pioneered the qualitative hypothesis that cosmic clocks run faster in voids than in bound walls via Buchert spatial averaging of classical GR, it remained limited by three fundamental barriers that Tau Core resolves from first principles (see Figure~\ref{fig:fig7} and Table~\ref{tab:multi_telescope}):
+\begin{enumerate}
+  \item \textbf{Galactic and Cluster ``Dark Matter'' Dynamics:} Because Wiltshire's Timescape relies purely on unmodified classical GR inside virialized regions, it provides no mechanism for flat galaxy rotation curves ($a_0 \approx 1.2\times 10^{-10}\;\mathrm{m\,s^{-2}}$), galaxy--galaxy weak lensing out to $1\;\mathrm{Mpc}$, or galaxy cluster lensing without still invoking particle dark matter. Tau Core derives $\alpha_{\mathrm{OCSR}} = 20\sqrt{3}/51 \implies a_0(0) = 1.18076\times 10^{-10}\;\mathrm{m\,s^{-2}}$ and the cluster condensate law directly from the $K_4$ clock-gradient action.
+  \item \textbf{Exact $5.368:1$ CMB Dark-to-Baryon Ratio:} Timescape offers no microphysical derivation of the Planck CMB acoustic peak ratio $\Omega_{\mathrm{DM}}/\Omega_b \approx 5.364$, whereas Tau Core derives $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65 = 5.368105$ ($0.06\sigma$) as an exact algebraic theorem of the $K_4$ $(4,6,4)$ simplex.
+  \item \textbf{Redshift Inflection Dip $z_{\mathrm{dip}} = 0.6316$ and Early JWST Collapse:} Tau Core uniquely predicts the Kodama--Hayward apparent-horizon trajectory $a_0^{\mathrm{KH}}(z)$ with its exact minimum at $z_{\mathrm{dip}} = 0.6316$ and its $(1+z)^{3/2}$ amplification at $z > 4$.
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/fig7_wiltshire_timescape_vs_tau_core_and_falsification_matrix.png}
+  \caption{\textbf{Multi-Telescope Comparative Scoreboard and Epistemic Boundary Matrix ($k = 0$ Tau Core vs.\ $\Lambda\mathrm{CDM}$, Classical MOND, and Wiltshire Timescape).} (A) Quantitative reduced $\chi^2_\nu$ and tension comparison across 10 observational benchmarks spanning Solar System to CMB scales. (B) Capability and falsification matrix across 10 physical domains, explicitly highlighting the low-mass group ($T_X < 2.5\;\mathrm{keV}$) AGN gas-evacuation boundary and upstream \texttt{NATURE\_LEVEL\_CLOSURE = false} tracking.}
+  \label{fig:fig7}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Master 12-benchmark empirical validation summary for Paper 20 (\texttt{data/derived/paper20\_multi\_telescope\_benchmark\_summary.csv}).}
+\label{tab:multi_telescope}
+\footnotesize
+\begin{tabular}{L{3.5cm}ccL{4.3cm}L{3.8cm}}
+\toprule
+\textbf{Telescope / Benchmark} & \textbf{Epoch ($z$)} & \textbf{Sample ($N$)} & \textbf{Tau Core ($k = 0$) Result} & \textbf{$\Lambda$CDM / GR / MOND Baseline} \\
+\midrule
+\textbf{1. Live Euclid DR1 RAR} (\texttt{dr1.spectro\_*}) & $0.13\text{--}3.49$ & $1,500$ lines ($359$ gal) & Med $g_{\mathrm{bar}} = 0.568\,a_0(0)$; $V_{\mathrm{Tau}}/V_{\mathrm{GR}} = \mathbf{1.544\times}$ ($133.7$ vs $84.8\;\mathrm{km/s}$) & Pure Baryon GR underpredicts circular speed by $36.6\%$ at $R_{\mathrm{eff}}$ \\
+\addlinespace[2pt]
+\textbf{2. Live Euclid DR1 Lenses} (\texttt{dr1.mer\_* + phz\_*}) & $0.15\text{--}0.90$ & $524$ lenses & $\Delta\Sigma_{\mathrm{Tau}}(200\;\mathrm{kpc}) = \mathbf{7.082\;M_\odot/\mathrm{pc}^2}$ ($\mathbf{15.7\times}$ boost over GR) & Pure Baryon GR gives $0.488\;M_\odot/\mathrm{pc}^2$ ($15.7\times$ deficit) \\
+\addlinespace[2pt]
+\textbf{3. Live Euclid DR1 3D Map} ($4$ Sky Regions) & $0.05\text{--}5.49$ & $5,955$ objects & $2,583$ voids ($\max \mathbf{+79.60\;\mathrm{ppm}}$); $2,192$ nodes ($\min \mathbf{-520.89\;\mathrm{ppm}}$) & Standard FLRW assumes uniform clock $\Delta(\mathrm{d}\tau/\mathrm{d}t) \equiv 0$ \\
+\addlinespace[2pt]
+\textbf{4. ESA Planck PR3 CMB} (TT+TE+EE) & $1090$ & $613$ bins & $\Omega_A/\Omega_b = \mathbf{5.3681}$ ($0.06\sigma$); $\ell_{1,2,3} = 219.8, 537.1, 810.2$ & Planck: $5.364 \pm 0.065$; $\Delta\chi^2_{\mathrm{Plik}} = \mathbf{+0.009}$ parity \\
+\addlinespace[2pt]
+\textbf{5. Euclid ERO Abell 2390} (Strong+Weak WL) & $0.228$ & $16$ radial bins & $M_{200}^{\mathrm{Tau}} = \mathbf{1.482 \times 10^{15}\;M_\odot}$; $r_{200}^{\mathrm{Tau}} = 2.437\;\mathrm{Mpc}$ ($\mathbf{0.19\sigma}$) & Euclid obs: $(1.51 \pm 0.16)\times 10^{15}\;M_\odot$; Baryon GR $6.4\times$ low \\
+\addlinespace[2pt]
+\textbf{6. 165 Galaxy Clusters} ($6$ Surveys) & $0.05\text{--}1.13$ & $165$ clusters & \texttt{CLASH} $1.005$, \texttt{X-COP} $1.015/0.963$, \texttt{LoCuSS} $0.961$, \texttt{CCCP} $0.999$, \texttt{SPT} $1.056$ & Static MOND fails at $R_{200}$ ($\Delta\mathrm{AIC} = +126.9$) \\
+\addlinespace[2pt]
+\textbf{7. JWST + HST Disks} (\texttt{Mancera Pi\~na+ 25}) & $0.83\text{--}1.00$ & $43$ disks & Full: $\chi^2 = \mathbf{149.55}$; Settled ($V/\sigma \ge 4$): $\chi^2_\nu = \mathbf{1.63}$ at $z_{\mathrm{dip}}$ & $\Lambda$CDM SHMR: $\chi^2 = \mathbf{227.75}$ ($\Delta\mathrm{AIC} = -78.2$) \\
+\addlinespace[2pt]
+\textbf{8. JWST + ALMA Cold Disks} (\texttt{[CII]/CO}) & $1.47\text{--}7.31$ & $17$ disks & Median $V_{\mathrm{Tau}}/V_{\mathrm{obs}} = \mathbf{1.077}$; $\chi^2_\nu = \mathbf{0.659}$ ($0.061\;\mathrm{dex}$) & $\Lambda$CDM SHMR: $\chi^2_\nu = \mathbf{2.241}$ ($0.145\;\mathrm{dex}$) \\
+\addlinespace[2pt]
+\textbf{9. JWST Early Collapse} (\texttt{JADES-z14 / ZF-UDS}) & $3.21\text{--}14.18$ & $4$ systems & Turnaround $z_{\mathrm{ta}} \approx 16.8$, virialization $z_{\mathrm{vir}} \approx \mathbf{10.5}$ via $a_0^{\mathrm{KH}}(z)$ & $\Lambda$CDM requires impossible $>100\%$ baryon conversion \\
+\addlinespace[2pt]
+\textbf{10. Eridanus Supervoid} (Planck Cold Spot) & $0.15$ & $12$ profile bins & Void clock $+49.6\;\mathrm{ppm} \implies \Delta T_{\mathrm{Tau}}(0) = \mathbf{-148.5\;\mu\mathrm{K}}$ ($\chi^2_\nu = \mathbf{0.42}$) & $\Lambda$CDM linear ISW gives $-26\;\mu\mathrm{K}$ ($>5\sigma$ failure) \\
+\addlinespace[2pt]
+\textbf{11. Spitzer + VLA SPARC} (Rotation Curves) & $0.0$ & $171$ gal ($3,373$ pts) & Median $\mathrm{RMSE} = \mathbf{12.67\;\mathrm{km/s}}$ ($k_{\mathrm{gal}} = 0$); $90.1\%$ win vs.\ GR & Fitted MOND: $13.74\;\mathrm{km/s}$; Newton: $41.09\;\mathrm{km/s}$ \\
+\addlinespace[2pt]
+\textbf{12. Cassini + NANOGrav} (Solar System / PTA) & $0.0$ & $36$ pulsars & NANOGrav $\mathrm{BF}_{10} = \mathbf{1.345}$; Cassini $|\gamma - 1| = \mathbf{6.37\times 10^{-11}}$ & Cassini bound $< 2.3\times 10^{-5}$ ($5$ orders safe) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}

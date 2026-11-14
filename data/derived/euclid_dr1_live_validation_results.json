@@ -1,0 +1,270 @@
+{
+  "archive_source": "ESA Euclid Science Archive Live TAP (https://eas.esac.esa.int/tap-server/tap/sync, schema: dr1.*)",
+  "data_release": "Euclid DR1-Foundation (2026 Public Release)",
+  "total_live_records_downloaded": 18983,
+  "datasets": {
+    "vis_mosaic_footprint_tiles": 11383,
+    "nisp_spectroscopic_galaxy_lines": 1500,
+    "nisp_unique_spectroscopic_galaxies": 359,
+    "mer_phz_wide_deep_edfn_galaxies": 5500,
+    "nisp_spectroscopic_quasars": 600,
+    "combined_unique_extragalactic_objects": 5955
+  },
+  "tau_core_v19_zero_parameter_constants": {
+    "k_free_parameters": 0,
+    "alpha_OCSR": 0.679235611,
+    "Omega_m_over_Omega_b": 6.368104954,
+    "a0_z0_m_s2": 1.18076e-10,
+    "z_dip_inflection": 0.6324,
+    "a0_KH_at_z_dip_over_a0": 0.93847
+  },
+  "validation_1_nisp_spectroscopic_kinematics": {
+    "n_lines": 1500,
+    "n_unique_galaxies": 359,
+    "z_spec_range": [
+      0.1309,
+      3.4927
+    ],
+    "median_Re_kpc": 3.825,
+    "median_g_bar_m_s2": 6.704e-11,
+    "median_g_bar_over_a0": 0.5678,
+    "median_g_Tau_m_s2": 1.5805e-10,
+    "median_v_GR_kms": 84.75,
+    "median_v_Tau_kms": 133.65,
+    "median_velocity_boost_factor": 1.544,
+    "redshift_bins": [
+      {
+        "z_range": "[0.10, 0.45)",
+        "n_galaxies": 18,
+        "z_median": 0.3371,
+        "a0_KH_over_a0_theory": 0.9535,
+        "median_Re_kpc": 3.096,
+        "median_log10_Mstar": 10.149,
+        "median_g_bar_m_s2": 1.0399e-10,
+        "median_g_Tau_m_s2": 2.1206e-10,
+        "median_v_GR_kms": 105.94,
+        "median_v_Tau_kms": 148.52,
+        "tau_to_gr_velocity_boost": 1.4019
+      },
+      {
+        "z_range": "[0.45, 0.78)",
+        "n_galaxies": 39,
+        "z_median": 0.6727,
+        "a0_KH_over_a0_theory": 0.9388,
+        "median_Re_kpc": 3.693,
+        "median_log10_Mstar": 9.815,
+        "median_g_bar_m_s2": 5.1857e-11,
+        "median_g_Tau_m_s2": 1.2768e-10,
+        "median_v_GR_kms": 82.37,
+        "median_v_Tau_kms": 122.64,
+        "tau_to_gr_velocity_boost": 1.4889
+      },
+      {
+        "z_range": "[0.78, 1.15)",
+        "n_galaxies": 125,
+        "z_median": 0.9281,
+        "a0_KH_over_a0_theory": 0.9536,
+        "median_Re_kpc": 3.731,
+        "median_log10_Mstar": 9.904,
+        "median_g_bar_m_s2": 5.1725e-11,
+        "median_g_Tau_m_s2": 1.2822e-10,
+        "median_v_GR_kms": 79.54,
+        "median_v_Tau_kms": 128.08,
+        "tau_to_gr_velocity_boost": 1.6102
+      },
+      {
+        "z_range": "[1.15, 1.65)",
+        "n_galaxies": 73,
+        "z_median": 1.4098,
+        "a0_KH_over_a0_theory": 1.0367,
+        "median_Re_kpc": 3.972,
+        "median_log10_Mstar": 9.739,
+        "median_g_bar_m_s2": 6.4828e-11,
+        "median_g_Tau_m_s2": 1.5517e-10,
+        "median_v_GR_kms": 81.45,
+        "median_v_Tau_kms": 125.81,
+        "tau_to_gr_velocity_boost": 1.5446
+      },
+      {
+        "z_range": "[1.65, 2.30)",
+        "n_galaxies": 53,
+        "z_median": 1.9328,
+        "a0_KH_over_a0_theory": 1.1906,
+        "median_Re_kpc": 3.372,
+        "median_log10_Mstar": 9.859,
+        "median_g_bar_m_s2": 9.5376e-11,
+        "median_g_Tau_m_s2": 2.1456e-10,
+        "median_v_GR_kms": 107.13,
+        "median_v_Tau_kms": 150.6,
+        "tau_to_gr_velocity_boost": 1.4058
+      },
+      {
+        "z_range": "[2.30, 3.50)",
+        "n_galaxies": 51,
+        "z_median": 2.8727,
+        "a0_KH_over_a0_theory": 1.5804,
+        "median_Re_kpc": 4.412,
+        "median_log10_Mstar": 9.872,
+        "median_g_bar_m_s2": 6.5036e-11,
+        "median_g_Tau_m_s2": 1.824e-10,
+        "median_v_GR_kms": 93.3,
+        "median_v_Tau_kms": 149.21,
+        "tau_to_gr_velocity_boost": 1.5993
+      }
+    ]
+  },
+  "validation_2_massive_foreground_lens_weak_lensing": {
+    "n_massive_foreground_lenses": 524,
+    "selection": "0.15 < z_L < 0.90 and log10(M*/Msun) >= 10.3",
+    "median_z_lens": 0.672,
+    "median_log10_Mstar_Msun": 10.662,
+    "median_Re_lens_kpc": 5.246,
+    "a0_KH_at_median_z_lens_m_s2": 1.1084e-10,
+    "DeltaSigma_Tau_at_200kpc_Msun_pc2": 9.0073,
+    "DeltaSigma_bar_at_200kpc_Msun_pc2": 0.4882,
+    "lensing_boost_over_GR_at_200kpc": 20.02,
+    "radial_profile": [
+      {
+        "R_kpc": 10.0,
+        "DeltaSigma_bar_Msun_pc2": 106.8917,
+        "DeltaSigma_Tau_Msun_pc2": 236.082,
+        "gamma_t_bar": 0.041362,
+        "gamma_t_Tau": 0.091353,
+        "tau_over_gr_lensing_ratio": 2.209
+      },
+      {
+        "R_kpc": 16.68,
+        "DeltaSigma_bar_Msun_pc2": 46.3682,
+        "DeltaSigma_Tau_Msun_pc2": 131.4562,
+        "gamma_t_bar": 0.017942,
+        "gamma_t_Tau": 0.050868,
+        "tau_over_gr_lensing_ratio": 2.835
+      },
+      {
+        "R_kpc": 27.83,
+        "DeltaSigma_bar_Msun_pc2": 18.8246,
+        "DeltaSigma_Tau_Msun_pc2": 73.0399,
+        "gamma_t_bar": 0.0072843,
+        "gamma_t_Tau": 0.028263,
+        "tau_over_gr_lensing_ratio": 3.88
+      },
+      {
+        "R_kpc": 46.42,
+        "DeltaSigma_bar_Msun_pc2": 7.3054,
+        "DeltaSigma_Tau_Msun_pc2": 41.0793,
+        "gamma_t_bar": 0.0028269,
+        "gamma_t_Tau": 0.015896,
+        "tau_over_gr_lensing_ratio": 5.623
+      },
+      {
+        "R_kpc": 77.43,
+        "DeltaSigma_bar_Msun_pc2": 2.7532,
+        "DeltaSigma_Tau_Msun_pc2": 23.4868,
+        "gamma_t_bar": 0.0010654,
+        "gamma_t_Tau": 0.0090883,
+        "tau_over_gr_lensing_ratio": 8.531
+      },
+      {
+        "R_kpc": 129.15,
+        "DeltaSigma_bar_Msun_pc2": 1.0186,
+        "DeltaSigma_Tau_Msun_pc2": 13.6298,
+        "gamma_t_bar": 0.00039415,
+        "gamma_t_Tau": 0.0052741,
+        "tau_over_gr_lensing_ratio": 13.381
+      },
+      {
+        "R_kpc": 215.44,
+        "DeltaSigma_bar_Msun_pc2": 0.3726,
+        "DeltaSigma_Tau_Msun_pc2": 7.9996,
+        "gamma_t_bar": 0.00014417,
+        "gamma_t_Tau": 0.0030955,
+        "tau_over_gr_lensing_ratio": 21.472
+      },
+      {
+        "R_kpc": 359.38,
+        "DeltaSigma_bar_Msun_pc2": 0.1353,
+        "DeltaSigma_Tau_Msun_pc2": 4.732,
+        "gamma_t_bar": 5.2364e-05,
+        "gamma_t_Tau": 0.0018311,
+        "tau_over_gr_lensing_ratio": 34.968
+      },
+      {
+        "R_kpc": 599.48,
+        "DeltaSigma_bar_Msun_pc2": 0.0489,
+        "DeltaSigma_Tau_Msun_pc2": 2.8134,
+        "gamma_t_bar": 1.8939e-05,
+        "gamma_t_Tau": 0.0010887,
+        "tau_over_gr_lensing_ratio": 57.481
+      },
+      {
+        "R_kpc": 1000.0,
+        "DeltaSigma_bar_Msun_pc2": 0.0177,
+        "DeltaSigma_Tau_Msun_pc2": 1.6781,
+        "gamma_t_bar": 6.8327e-06,
+        "gamma_t_Tau": 0.00064935,
+        "tau_over_gr_lensing_ratio": 95.035
+      }
+    ]
+  },
+  "validation_3_and_4_3d_time_landscape_tomography": {
+    "n_total_mapped_objects": 5955,
+    "n_underdense_void_galaxies_faster_clock": 2582,
+    "n_overdense_cluster_filament_galaxies_slower_clock": 2195,
+    "max_void_clock_acceleration_ppm": 79.53,
+    "max_cluster_clock_retardation_ppm": -520.96,
+    "fields": {
+      "EDFN-North": {
+        "n_objects": 1500,
+        "ra_median_deg": 262.73,
+        "dec_median_deg": 66.66,
+        "z_min": 0.064,
+        "z_median": 1.875,
+        "z_max": 5.224,
+        "n_void_galaxies_clock_speedup": 617,
+        "n_cluster_filament_galaxies_clock_slowdown": 523,
+        "max_void_clock_speedup_ppm": 79.53,
+        "min_cluster_clock_slowdown_ppm": -276.48,
+        "median_velocity_boost_vTau_over_vGR": 1.6339
+      },
+      "EDFF-Fornax": {
+        "n_objects": 672,
+        "ra_median_deg": 53.17,
+        "dec_median_deg": -28.14,
+        "z_min": 0.074,
+        "z_median": 1.674,
+        "z_max": 5.221,
+        "n_void_galaxies_clock_speedup": 271,
+        "n_cluster_filament_galaxies_clock_slowdown": 267,
+        "max_void_clock_speedup_ppm": 77.94,
+        "min_cluster_clock_slowdown_ppm": -502.75,
+        "median_velocity_boost_vTau_over_vGR": 1.5834
+      },
+      "COSMOS-Deep": {
+        "n_objects": 2783,
+        "ra_median_deg": 150.35,
+        "dec_median_deg": 2.16,
+        "z_min": 0.078,
+        "z_median": 1.658,
+        "z_max": 5.475,
+        "n_void_galaxies_clock_speedup": 1164,
+        "n_cluster_filament_galaxies_clock_slowdown": 1093,
+        "max_void_clock_speedup_ppm": 79.51,
+        "min_cluster_clock_slowdown_ppm": -375.8,
+        "median_velocity_boost_vTau_over_vGR": 1.5622
+      },
+      "Southern-Wide": {
+        "n_objects": 1000,
+        "ra_median_deg": 80.25,
+        "dec_median_deg": -51.02,
+        "z_min": 0.064,
+        "z_median": 0.6,
+        "z_max": 3.368,
+        "n_void_galaxies_clock_speedup": 530,
+        "n_cluster_filament_galaxies_clock_slowdown": 312,
+        "max_void_clock_speedup_ppm": 66.47,
+        "min_cluster_clock_slowdown_ppm": -520.96,
+        "median_velocity_boost_vTau_over_vGR": 1.5253
+      }
+    }
+  }
+}

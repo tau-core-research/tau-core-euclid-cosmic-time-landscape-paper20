@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+.DS_Store
+*.pyc
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+tmp/
