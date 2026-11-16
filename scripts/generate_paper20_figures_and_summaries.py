@@ -380,18 +380,19 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
     kh_zdip = a0_kh_over_a0_kh0(Z_DIP)
 
     plt.rcParams.update({
-        "figure.facecolor": "#060A12",
-        "axes.facecolor": "#0B1120",
-        "axes.edgecolor": "#2A3958",
-        "axes.labelcolor": "#E2E8F0",
-        "xtick.color": "#94A3B8",
-        "ytick.color": "#94A3B8",
-        "text.color": "#F8FAFC",
-        "grid.color": "#1E293B",
+        "figure.facecolor": "#FFFFFF",
+        "axes.facecolor": "#F8FAFC",
+        "axes.edgecolor": "#475569",
+        "axes.labelcolor": "#0F172A",
+        "xtick.color": "#334155",
+        "ytick.color": "#334155",
+        "text.color": "#0F172A",
+        "grid.color": "#CBD5E1",
         "font.sans-serif": ["DejaVu Sans", "Arial", "Helvetica"],
     })
 
     fig = plt.figure(figsize=(21, 13.0), dpi=300)
+    fig.patch.set_facecolor("#FFFFFF")
     gs = gridspec.GridSpec(
         2, 2, figure=fig, height_ratios=[1.12, 0.95], width_ratios=[1.08, 1.0],
         hspace=0.28, wspace=0.22, left=0.045, right=0.97, top=0.895, bottom=0.055,
@@ -403,7 +404,7 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         if hu else
         "THE TAU CORE COSMIC TIME-LANDSCAPE PARADIGM (M_τ* = dτ/dt): PHYSICAL MECHANISM & DUALITY\n"
         "How Non-Uniform Cosmic Clock Rates Replace Particle Dark Matter & Vacuum Dark Energy (Λ) with Zero Free Parameters (k = 0)",
-        fontsize=14.6, fontweight="bold", color="#F8FAFC", y=0.962,
+        fontsize=14.6, fontweight="bold", color="#0F172A", y=0.962,
     )
 
     # PANEL A: Cosmic Time-Landscape Cross-Section
@@ -417,45 +418,45 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
     )
 
     ax1.axhline(
-        0.0, color="#94A3B8", linestyle="--", lw=1.4,
+        0.0, color="#64748B", linestyle="--", lw=1.4,
         label=("Átlagos FLRW háttéróra (dτ/dt = 1, Δ = 0 ppm)" if hu else "Mean FLRW Background Clock (dτ/dt = 1, Δ = 0 ppm)"),
     )
-    ax1.plot(x, clock_ppm, color="#38BDF8", lw=3.0, zorder=4)
+    ax1.plot(x, clock_ppm, color="#0284C7", lw=3.0, zorder=4)
     ax1.fill_between(
-        x, np.minimum(clock_ppm, 0.0), 0.0, color="#3B82F6", alpha=0.25,
+        x, np.minimum(clock_ppm, 0.0), 0.0, color="#3B82F6", alpha=0.22,
         label=("ÓRA-VÖLGYEK (dτ/dt < 1): Galaxisok, halmazok, fekete lyukak → 'Látszólagos sötét anyag'"
                if hu else "CLOCK VALLEYS (dτ/dt < 1): Galaxies, Clusters, Black Holes → 'Apparent Dark Matter'"),
     )
     ax1.fill_between(
-        x, 0.0, np.maximum(clock_ppm, 0.0), color="#EF4444", alpha=0.25,
+        x, 0.0, np.maximum(clock_ppm, 0.0), color="#EF4444", alpha=0.22,
         label=("ÓRA-DOMBOK (dτ/dt > 1): Táguló kozmikus szuperürességek → 'Látszólagos sötét energia (Λ)'"
                if hu else "CLOCK HILLS (dτ/dt > 1): Expanding Cosmic Supervoids → 'Apparent Dark Energy (Λ)'"),
     )
 
     ray_x1 = np.linspace(-52.0, -14.0, 100)
     ray_y1 = 72.0 - 12.0 * np.exp(-((ray_x1 + 32.0) / 11.0) ** 2)
-    ax1.plot(ray_x1, ray_y1, color="#FDE047", lw=2.0)
+    ax1.plot(ray_x1, ray_y1, color="#D97706", lw=2.2)
     ax1.annotate(
         "Foton-sugár befelé törik\n(n_eff = (dτ/dt)^(-2) > 1, κ_eff > 0)\n→ Gravitációs lencsézési többlet"
         if hu else
         "Photon Ray Refracts Inward\n(n_eff = (dτ/dt)^(-2) > 1, κ_eff > 0)\n→ Gravitational Lensing Excess",
         xy=(-32.0, 60.0), xytext=(-56.5, 81.0),
-        fontsize=8.0, fontweight="bold", color="#FDE047",
-        bbox=dict(boxstyle="round,pad=0.25", fc="#0F172A", ec="#FDE047", alpha=0.9),
-        arrowprops=dict(arrowstyle="->", color="#FDE047", lw=1.3),
+        fontsize=8.0, fontweight="bold", color="#92400E",
+        bbox=dict(boxstyle="round,pad=0.25", fc="#FFFBEB", ec="#D97706", alpha=0.95),
+        arrowprops=dict(arrowstyle="->", color="#B45309", lw=1.3),
     )
 
     ray_x2 = np.linspace(10.0, 46.0, 100)
     ray_y2 = 64.0 + 11.0 * np.exp(-((ray_x2 - 28.0) / 14.0) ** 2)
-    ax1.plot(ray_x2, ray_y2, color="#FCA5A5", lw=2.0)
+    ax1.plot(ray_x2, ray_y2, color="#DC2626", lw=2.2)
     ax1.annotate(
         "Foton-sugár széttart és vöröseltolódik\n(dτ/dt > 1, κ_eff < 0, ΔT_CMB = -153.8 μK)\n→ Divergens void-lencsézés és ISW Cold Spot"
         if hu else
         "Photon Ray Diverges & Redshifts\n(dτ/dt > 1, κ_eff < 0, ΔT_CMB = -153.8 μK)\n→ Divergent Void Lensing & ISW Cold Spot",
         xy=(28.0, 75.0), xytext=(6.0, 82.0),
-        fontsize=8.0, fontweight="bold", color="#FCA5A5",
-        bbox=dict(boxstyle="round,pad=0.25", fc="#0F172A", ec="#EF4444", alpha=0.9),
-        arrowprops=dict(arrowstyle="->", color="#EF4444", lw=1.3),
+        fontsize=8.0, fontweight="bold", color="#991B1B",
+        bbox=dict(boxstyle="round,pad=0.25", fc="#FEF2F2", ec="#DC2626", alpha=0.95),
+        arrowprops=dict(arrowstyle="->", color="#DC2626", lw=1.3),
     )
 
     ax1.annotate(
@@ -463,9 +464,9 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         if hu else
         "Galaxy Cluster / Black Hole Node\n(e.g. Abell 2390, Coma, Euclid Nodes)\nClocks Retarded: Δ(dτ/dt) = -11 to -290 ppm\nInward Boost: g_Tau = g_bar · F_OD(R, z)²",
         xy=(-32.0, -112.0), xytext=(-58.5, -52.0),
-        fontsize=7.8, color="#93C5FD",
-        bbox=dict(boxstyle="round,pad=0.25", fc="#0F172A", ec="#3B82F6", alpha=0.92),
-        arrowprops=dict(arrowstyle="->", color="#3B82F6", lw=1.2),
+        fontsize=7.8, color="#1E3A8A", fontweight="bold",
+        bbox=dict(boxstyle="round,pad=0.25", fc="#EFF6FF", ec="#2563EB", alpha=0.95),
+        arrowprops=dict(arrowstyle="->", color="#2563EB", lw=1.2),
     )
 
     ax1.annotate(
@@ -473,9 +474,9 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         if hu else
         "Cosmic Supervoid Interior\n(e.g. Eridanus +55.7 ppm, Euclid DR1 Voids)\nClocks Accelerated: p95 +35.8 ppm (max +484 ppm)\nUnscreened K4 Clock Expansion (>70% Volume)",
         xy=(28.0, 55.7), xytext=(10.5, 9.0),
-        fontsize=7.9, color="#FCA5A5",
-        bbox=dict(boxstyle="round,pad=0.25", fc="#0F172A", ec="#EF4444", alpha=0.92),
-        arrowprops=dict(arrowstyle="->", color="#EF4444", lw=1.2),
+        fontsize=7.9, color="#991B1B", fontweight="bold",
+        bbox=dict(boxstyle="round,pad=0.25", fc="#FEF2F2", ec="#DC2626", alpha=0.95),
+        arrowprops=dict(arrowstyle="->", color="#DC2626", lw=1.2),
     )
 
     ax1.set_xlim(-60.0, 60.0)
@@ -486,10 +487,10 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         "A) Fizikai mechanizmus: Hogyan egyesíti a 3D óra-tájkép (M_τ*) a sötét anyagot és sötét energiát"
         if hu else
         "A) Physical Mechanism: How the 3D Clock-Rate Landscape (M_τ*) Unifies Dark Matter & Dark Energy",
-        fontsize=10.9, fontweight="bold",
+        fontsize=10.9, fontweight="bold", color="#0F172A",
     )
-    ax1.grid(True, alpha=0.3)
-    ax1.legend(loc="lower right", fontsize=7.6, framealpha=0.9, facecolor="#0F172A")
+    ax1.grid(True, alpha=0.45)
+    ax1.legend(loc="lower right", fontsize=7.6, framealpha=0.94, facecolor="#FFFFFF", edgecolor="#CBD5E1")
 
     # PANEL B: Black Hole <-> Expanding Cosmos Time-Reversal Duality on K4
     ax2 = fig.add_subplot(gs[0, 1])
@@ -499,23 +500,23 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
     dtau_bh = 1.0 / np.sqrt(1.0 + (1.0 / (r_over_rs + r_k4)) ** 2)
 
     ax2.semilogx(
-        r_over_rs, v_over_c, color="#F43F5E", lw=2.8,
+        r_over_rs, v_over_c, color="#E11D48", lw=2.8,
         label=(r"Beáramlási / Hubble-sebesség $|v_{\mathrm{flow}}|/c = \sqrt{R_S/(r + \ell_{K_4})}$"
                if hu else r"Inflow / Hubble Expansion Speed $|v_{\mathrm{flow}}|/c = \sqrt{R_S/(r + \ell_{K_4})}$"),
     )
     ax2.semilogx(
-        r_over_rs, dtau_bh, color="#38BDF8", lw=2.8,
+        r_over_rs, dtau_bh, color="#0284C7", lw=2.8,
         label=(r"Lokális óraráta $M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t$ (reguláris $K_4$ mag telítődés)"
                if hu else r"Local Clock Rate $M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t$ (Regular $K_4$ Core Saturation)"),
     )
     ax2.axvline(
-        1.0, color="#FDE047", linestyle="--", lw=1.8,
+        1.0, color="#B45309", linestyle="--", lw=1.8,
         label=(r"Horizont-határ ($r = R_S$ fekete lyuk $\leftrightarrow$ $r = R_H = c/H$ kozmosz)"
                if hu else r"Horizon Boundary ($r = R_S$ for BH $\leftrightarrow$ $r = R_H = c/H$ for Cosmos)"),
     )
-    ax2.axhline(1.0, color="#94A3B8", linestyle=":", lw=1.4)
+    ax2.axhline(1.0, color="#64748B", linestyle=":", lw=1.4)
 
-    ax2.fill_between(r_over_rs[r_over_rs <= 1.0], 0.0, 3.8, color="#F43F5E", alpha=0.10)
+    ax2.fill_between(r_over_rs[r_over_rs <= 1.0], 0.0, 3.8, color="#F43F5E", alpha=0.08)
     ax2.fill_between(r_over_rs[r_over_rs >= 1.0], 0.0, 3.8, color="#22C55E", alpha=0.07)
 
     ax2.text(
@@ -535,8 +536,8 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         "  OUTWARD from the K4 core faster than c.\n"
         "• NO TIME PARADOX (No CTCs): Global K4 causal\n"
         "  order τ is strictly monotonic (dτ > 0 everywhere)!",
-        fontsize=7.6, color="#FECDD3",
-        bbox=dict(boxstyle="round,pad=0.3", fc="#0F172A", ec="#F43F5E", alpha=0.92),
+        fontsize=7.6, color="#881337",
+        bbox=dict(boxstyle="round,pad=0.3", fc="#FFF1F2", ec="#E11D48", alpha=0.95),
     )
 
     ax2.text(
@@ -558,8 +559,8 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         "  (z=1100, T=3000 K) → Outward\n"
         "  Expansion → Cold Today (2.725 K)\n"
         "  (a0^KH(z) = (5√3/24) |κ_KH(z)|)",
-        fontsize=7.7, color="#BBF7D0",
-        bbox=dict(boxstyle="round,pad=0.3", fc="#0F172A", ec="#22C55E", alpha=0.92),
+        fontsize=7.7, color="#14532D",
+        bbox=dict(boxstyle="round,pad=0.3", fc="#F0FDF4", ec="#16A34A", alpha=0.95),
     )
 
     ax2.set_xlim(0.08, 25.0)
@@ -570,10 +571,10 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         "B) Fekete lyuk ↔ Táguló univerzum idő-megfordítási dualitás a K4 kauzális hálózaton"
         if hu else
         "B) Black Hole ↔ Expanding Universe Time-Reversal Duality on the K4 Causal Network",
-        fontsize=10.9, fontweight="bold",
+        fontsize=10.9, fontweight="bold", color="#0F172A",
     )
-    ax2.grid(True, which="both", alpha=0.3)
-    ax2.legend(loc="lower left", fontsize=7.6, framealpha=0.9, facecolor="#0F172A")
+    ax2.grid(True, which="both", alpha=0.45)
+    ax2.legend(loc="lower left", fontsize=7.6, framealpha=0.94, facecolor="#FFFFFF", edgecolor="#CBD5E1")
 
     # PANEL C: Zero-Parameter (k = 0) K4 Derivation Flowchart
     ax3 = fig.add_subplot(gs[1, :])
@@ -584,12 +585,12 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         "C) Teljes zéró szabad paraméteres (k = 0) levezetési lánc a pregeometrikus K4 szimplextől az űrtávcsöves megfigyelésekig"
         if hu else
         "C) Complete Zero-Free-Parameter (k = 0) Derivation Chain from the Pregeometric K4 Simplex to Space-Telescope Observables",
-        fontsize=11.3, fontweight="bold", pad=8,
+        fontsize=11.3, fontweight="bold", color="#0F172A", pad=8,
     )
 
     if hu:
         boxes = [
-            (2.0, 4.5, 20.5, 20.2, "#1E3A8A", "#60A5FA",
+            (2.0, 4.5, 20.5, 20.2, "#EFF6FF", "#2563EB",
              "1. LÉPCSŐ: PREGEOMETRIKUS K4 MAG\n"
              "──────────────────────────\n"
              "• Euler–Pareto minimális 4-szimplex:\n"
@@ -599,7 +600,7 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
              "• Kovariáns Li₂ Noether-hatás (U3):\n"
              "  egzakt impulzusmegmaradás, c_GW = c\n"
              "• Szabad paraméterek száma: k = 0"),
-            (26.5, 4.5, 22.0, 20.2, "#064E3B", "#34D399",
+            (26.5, 4.5, 22.0, 20.2, "#ECFDF5", "#059669",
              "2. LÉPCSŐ: KANONIKUS v19 INVARIÁNSOK\n"
              "───────────────────────────\n"
              "• Egyszeresen számolt Schur-állandó:\n"
@@ -609,7 +610,7 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
              f"  a0^KH(0)  = {A0_KH_Z0*1e10:.4f}×10⁻¹⁰ m/s²\n"
              "• Nemlokális kondenzátum-arány:\n"
              f"  Ω_A/Ω_b = (213√3-20)/65 = {OMEGA_A_OVER_B:.6f}"),
-            (52.5, 4.5, 21.5, 20.2, "#4C1D95", "#C084FC",
+            (52.5, 4.5, 21.5, 20.2, "#F5F3FF", "#7C3AED",
              "3. LÉPCSŐ: dK HOLONÓMIA & OCSR+COCA\n"
              "───────────────────────────\n"
              "• Egzakt dK 2-forma holonómia (U2/F2):\n"
@@ -618,7 +619,7 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
              f"  a0^KH(z_dip) / a0^KH(0) = {kh_zdip:.4f}\n"
              "• Korai univerzum erősítés:\n"
              f"  z=7.31: {kh_z73:.2f}×,  z=14.18: {kh_z14:.2f}× a0^KH(0)"),
-            (78.0, 4.5, 20.0, 20.2, "#7C2D12", "#FBBF24",
+            (78.0, 4.5, 20.0, 20.2, "#FFFBEB", "#D97706",
              "4. LÉPCSŐ: ŰRTÁVCSÖVES VALIDÁCIÓ\n"
              "──────────────────────────\n"
              "• Élő ESA Euclid DR1 (18 983 rekord):\n"
@@ -630,7 +631,7 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         ]
     else:
         boxes = [
-            (2.0, 4.5, 20.5, 20.2, "#1E3A8A", "#60A5FA",
+            (2.0, 4.5, 20.5, 20.2, "#EFF6FF", "#2563EB",
              "STAGE 1: PREGEOMETRIC K4 CORE\n"
              "─────────────────────────\n"
              "• Euler–Pareto Minimal 4-Simplex:\n"
@@ -640,7 +641,7 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
              "• Covariant Li₂ Noether Action (U3):\n"
              "  Exact momentum conservation, c_GW = c\n"
              "• Free Parameters: k = 0"),
-            (26.5, 4.5, 22.0, 20.2, "#064E3B", "#34D399",
+            (26.5, 4.5, 22.0, 20.2, "#ECFDF5", "#059669",
              "STAGE 2: CANONICAL v19 INVARIANTS\n"
              "───────────────────────────\n"
              "• Once-Counted Schur Reduction (OCSR):\n"
@@ -650,7 +651,7 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
              f"  a0^KH(0)  = {A0_KH_Z0*1e10:.4f} × 10⁻¹⁰ m/s²\n"
              "• Non-Local Condensate Susceptibility:\n"
              f"  Ω_A/Ω_b = (213√3-20)/65 = {OMEGA_A_OVER_B:.6f}"),
-            (52.5, 4.5, 21.5, 20.2, "#4C1D95", "#C084FC",
+            (52.5, 4.5, 21.5, 20.2, "#F5F3FF", "#7C3AED",
              "STAGE 3: dK HOLONOMY & OCSR+COCA\n"
              "───────────────────────────\n"
              "• Exterior 2-Form Holonomy dK (U2/F2):\n"
@@ -659,7 +660,7 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
              f"  a0^KH(z_dip) / a0^KH(0) = {kh_zdip:.4f}\n"
              "• Early-Universe Amplification:\n"
              f"  z=7.31: {kh_z73:.2f}×,  z=14.18: {kh_z14:.2f}× a0^KH(0)"),
-            (78.0, 4.5, 20.0, 20.2, "#7C2D12", "#FBBF24",
+            (78.0, 4.5, 20.0, 20.2, "#FFFBEB", "#D97706",
              "STAGE 4: TELESCOPE VALIDATION\n"
              "─────────────────────────\n"
              "• Live ESA Euclid DR1 (18,983 rec.):\n"
@@ -671,23 +672,23 @@ def generate_fig1_mechanism_and_blackhole_duality(live_res: dict, lang: str = "e
         ]
 
     for bx, by, bw, bh, fc, ec, txt in boxes:
-        patch = FancyBboxPatch((bx, by), bw, bh, boxstyle="round,pad=0.6", facecolor=fc, edgecolor=ec, linewidth=2.0, alpha=0.88)
+        patch = FancyBboxPatch((bx, by), bw, bh, boxstyle="round,pad=0.6", facecolor=fc, edgecolor=ec, linewidth=2.0, alpha=0.95)
         ax3.add_patch(patch)
-        ax3.text(bx + bw / 2.0, by + bh / 2.0, txt, ha="center", va="center", fontsize=8.0, color="#F8FAFC", linespacing=1.35)
+        ax3.text(bx + bw / 2.0, by + bh / 2.0, txt, ha="center", va="center", fontsize=8.0, color="#0F172A", linespacing=1.35)
 
     for x0, x1 in [(22.8, 26.2), (48.8, 52.2), (74.3, 77.7)]:
-        arr = FancyArrowPatch((x0, 14.6), (x1, 14.6), arrowstyle="Simple,tail_width=2.5,head_width=9,head_length=8", color="#FDE047", zorder=6)
+        arr = FancyArrowPatch((x0, 14.6), (x1, 14.6), arrowstyle="Simple,tail_width=2.5,head_width=9,head_length=8", color="#B45309", zorder=6)
         ax3.add_patch(arr)
 
     fname = "fig1_tau_cosmic_time_landscape_mechanism_and_blackhole_duality.png"
     if hu:
         out_path = SUB_HU_FIG / fname
-        fig.savefig(out_path, dpi=300)
+        fig.savefig(out_path, dpi=300, facecolor="#FFFFFF")
         plt.close(fig)
         print(f"[OK] Generated HU {out_path}")
     else:
         out_path = FIG_DIR / fname
-        fig.savefig(out_path, dpi=300)
+        fig.savefig(out_path, dpi=300, facecolor="#FFFFFF")
         plt.close(fig)
         copy_en_figure(out_path, fname)
         print(f"[OK] Generated EN {out_path}")
@@ -702,18 +703,19 @@ def generate_fig7_comparative_scoreboard_and_falsification(live_res: dict, val_r
     v2 = live_res["validation_2_massive_foreground_lens_weak_lensing"]
 
     plt.rcParams.update({
-        "figure.facecolor": "#060A12",
-        "axes.facecolor": "#0B1120",
-        "axes.edgecolor": "#2A3958",
-        "axes.labelcolor": "#E2E8F0",
-        "xtick.color": "#94A3B8",
-        "ytick.color": "#94A3B8",
-        "text.color": "#F8FAFC",
-        "grid.color": "#1E293B",
+        "figure.facecolor": "#FFFFFF",
+        "axes.facecolor": "#F8FAFC",
+        "axes.edgecolor": "#475569",
+        "axes.labelcolor": "#0F172A",
+        "xtick.color": "#334155",
+        "ytick.color": "#334155",
+        "text.color": "#0F172A",
+        "grid.color": "#CBD5E1",
         "font.sans-serif": ["DejaVu Sans", "Arial", "Helvetica"],
     })
 
     fig = plt.figure(figsize=(22, 11.5), dpi=300)
+    fig.patch.set_facecolor("#FFFFFF")
     gs = gridspec.GridSpec(1, 2, figure=fig, width_ratios=[1.12, 1.0], wspace=0.22,
                            left=0.145, right=0.975, top=0.88, bottom=0.09)
 
@@ -723,7 +725,7 @@ def generate_fig7_comparative_scoreboard_and_falsification(live_res: dict, val_r
         if hu else
         "MULTI-TELESCOPE COMPARATIVE SCOREBOARD & PRE-REGISTERED FALSIFICATION MATRIX (k = 0 vs ΛCDM, MOND & TIMESCAPE)\n"
         "Testing Zero-Parameter Tau Core Across 8 Orders of Magnitude in Scale (Solar System to Planck CMB Horizon)",
-        fontsize=14.0, fontweight="bold", color="#F8FAFC", y=0.96,
+        fontsize=14.0, fontweight="bold", color="#0F172A", y=0.96,
     )
 
     ax1 = fig.add_subplot(gs[0, 0])
@@ -762,18 +764,18 @@ def generate_fig7_comparative_scoreboard_and_falsification(live_res: dict, val_r
     mond_scores = [13.5, 2.15, 6.40, 8.90, 6.20, 4.51, 1.95, 2.40, 9.80, 1.15]
     timescape_scores = [7.80, 12.5, 9.50, 9.20, 9.10, 8.40, 7.90, 8.20, 2.10, 12.8]
 
-    ax1.barh(y + 1.5 * height, tau_scores, height, color="#22C55E", edgecolor="white", lw=0.5,
+    ax1.barh(y + 1.5 * height, tau_scores, height, color="#16A34A", edgecolor="#0F172A", lw=0.5,
              label=("Tau Core (v19, k = 0 szabad paraméter)" if hu else "Tau Core (v19, k = 0 free parameters)"))
-    ax1.barh(y + 0.5 * height, lcdm_scores, height, color="#38BDF8", alpha=0.85,
+    ax1.barh(y + 0.5 * height, lcdm_scores, height, color="#0284C7", alpha=0.88,
              label=("Standard ΛCDM (6 kozmikus + halónkénti NFW paraméter)" if hu else "Standard ΛCDM (6 cosmic + per-halo NFW parameters)"))
-    ax1.barh(y - 0.5 * height, mond_scores, height, color="#F59E0B", alpha=0.85,
+    ax1.barh(y - 0.5 * height, mond_scores, height, color="#D97706", alpha=0.88,
              label=("Klasszikus statikus MOND (a0 = konst., nincs K4 kondenzátum)" if hu else "Classical Static MOND (a0 = const, no K4 condensate)"))
-    ax1.barh(y - 1.5 * height, timescape_scores, height, color="#F43F5E", alpha=0.85,
+    ax1.barh(y - 1.5 * height, timescape_scores, height, color="#E11D48", alpha=0.88,
              label=("Wiltshire Timescape (csak Buchert GR átlagolás)" if hu else "Wiltshire Timescape (Buchert GR backreaction only)"))
 
-    ax1.axvline(1.0, color="#86EFAC", linestyle="--", lw=1.5,
+    ax1.axvline(1.0, color="#15803D", linestyle="--", lw=1.6,
                 label=("Ideális statisztikai illeszkedés (χ²_ν ≈ 1.0)" if hu else "Ideal Statistical Fit (χ²_ν ≈ 1.0)"))
-    ax1.axvline(3.0, color="#FCA5A5", linestyle=":", lw=1.5,
+    ax1.axvline(3.0, color="#DC2626", linestyle=":", lw=1.6,
                 label=("3σ / modell-elutasítási küszöb" if hu else "3σ / Model Rejection Threshold"))
 
     ax1.set_yticks(y)
@@ -790,10 +792,10 @@ def generate_fig7_comparative_scoreboard_and_falsification(live_res: dict, val_r
         "A) Kvantitatív modell-összehasonlítás 10 űr- és földi teleszkópos benchmarkon"
         if hu else
         "A) Quantitative Model Comparison Across 10 Space- & Ground-Telescope Benchmarks",
-        fontsize=10.9, fontweight="bold",
+        fontsize=10.9, fontweight="bold", color="#0F172A",
     )
-    ax1.grid(True, axis="x", alpha=0.3)
-    ax1.legend(loc="lower right", fontsize=7.8, framealpha=0.92, facecolor="#0F172A")
+    ax1.grid(True, axis="x", alpha=0.45)
+    ax1.legend(loc="lower right", fontsize=7.8, framealpha=0.94, facecolor="#FFFFFF", edgecolor="#CBD5E1")
 
     # PANEL B: Theory Capability Matrix & Epistemic Boundary Table
     ax2 = fig.add_subplot(gs[0, 1])
@@ -802,7 +804,7 @@ def generate_fig7_comparative_scoreboard_and_falsification(live_res: dict, val_r
         "B) Fizikai mechanizmus-összehasonlítás és őszinte episztemikus határok"
         if hu else
         "B) Physical Mechanism Comparison & Honest Epistemic Boundaries",
-        fontsize=10.9, fontweight="bold", pad=10,
+        fontsize=10.9, fontweight="bold", color="#0F172A", pad=10,
     )
 
     if hu:
@@ -841,32 +843,32 @@ def generate_fig7_comparative_scoreboard_and_falsification(live_res: dict, val_r
     tbl.set_fontsize(7.9)
 
     for (row, col), cell in tbl.get_celld().items():
-        cell.set_edgecolor("#334155")
+        cell.set_edgecolor("#CBD5E1")
         if row == 0:
             cell.set_facecolor("#1E3A8A")
-            cell.get_text().set_color("#F8FAFC")
+            cell.get_text().set_color("#FFFFFF")
             cell.get_text().set_weight("bold")
         else:
             txt = cell.get_text().get_text()
             if col == 4:
                 if "Open" in txt or "Nyitott" in txt:
-                    cell.set_facecolor("#422006")
-                    cell.get_text().set_color("#FDE047")
+                    cell.set_facecolor("#FEF3C7")
+                    cell.get_text().set_color("#92400E")
                 else:
-                    cell.set_facecolor("#064E3B")
-                    cell.get_text().set_color("#A7F3D0")
+                    cell.set_facecolor("#DCFCE7")
+                    cell.get_text().set_color("#14532D")
                 cell.get_text().set_weight("bold")
             elif col == 0:
-                cell.set_facecolor("#0F172A")
-                cell.get_text().set_color("#E2E8F0")
+                cell.set_facecolor("#F1F5F9")
+                cell.get_text().set_color("#0F172A")
                 cell.get_text().set_ha("left")
             else:
                 if any(bad in txt for bad in ("Fails", "No", ">100%", "Kudarc", "Nem", "Nincs")):
-                    cell.set_facecolor("#3B0A14")
-                    cell.get_text().set_color("#FDA4AF")
+                    cell.set_facecolor("#FEE2E2")
+                    cell.get_text().set_color("#991B1B")
                 else:
-                    cell.set_facecolor("#111827")
-                    cell.get_text().set_color("#CBD5E1")
+                    cell.set_facecolor("#F8FAFC")
+                    cell.get_text().set_color("#334155")
 
     ax2.text(
         0.5, 0.09,
@@ -881,19 +883,19 @@ def generate_fig7_comparative_scoreboard_and_falsification(live_res: dict, val_r
         "   so the constant massive-cluster shock boundary (u_sh = 1.35 R200) underpredicts low-mass group masses (median 0.679).\n"
         "2. Upstream Realization Gate: Terminal astrophysical predictions operate at k = 0 free parameters (Chung Laplacian U1/F1\n"
         "   closes C1=C2), while the irreducible ontic axiom EAS-SNPR-N1 keeps NATURE_LEVEL_CLOSURE = false.",
-        ha="center", va="center", fontsize=7.8, color="#FDE047",
-        bbox=dict(boxstyle="round,pad=0.35", fc="#0F172A", ec="#F59E0B", alpha=0.92),
+        ha="center", va="center", fontsize=7.8, color="#92400E",
+        bbox=dict(boxstyle="round,pad=0.35", fc="#FFFBEB", ec="#D97706", alpha=0.95),
     )
 
     fname = "fig7_wiltshire_timescape_vs_tau_core_and_falsification_matrix.png"
     if hu:
         out_path = SUB_HU_FIG / fname
-        fig.savefig(out_path, dpi=300)
+        fig.savefig(out_path, dpi=300, facecolor="#FFFFFF")
         plt.close(fig)
         print(f"[OK] Generated HU {out_path}")
     else:
         out_path = FIG_DIR / fname
-        fig.savefig(out_path, dpi=300)
+        fig.savefig(out_path, dpi=300, facecolor="#FFFFFF")
         plt.close(fig)
         copy_en_figure(out_path, fname)
         print(f"[OK] Generated EN {out_path}")
