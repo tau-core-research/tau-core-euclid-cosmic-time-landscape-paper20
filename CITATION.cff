@@ -3,6 +3,7 @@ message: "If you use this reproducibility package or manuscript, please cite it 
 title: "The Cosmic Time-Landscape (M_tau*): Live ESA Euclid DR1-Foundation Validation and Multi-Telescope Atlas of the Zero-Parameter Tau Core Universe Model (Paper 20)"
 authors:
   - name: "Tau Core Research"
+    orcid: "https://orcid.org/0009-0003-7311-6522"
 date-released: 2026-11-14
 version: "1.0.0"
 repository-code: "https://github.com/tau-core-research/tau-core-euclid-cosmic-time-landscape-paper20"
