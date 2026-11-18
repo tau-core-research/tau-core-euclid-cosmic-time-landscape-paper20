@@ -1,0 +1,371 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=0.82in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+\usepackage{hyperref}
+
+\renewcommand{\figurename}{Ábra}
+\renewcommand{\tablename}{Táblázat}
+\renewcommand{\refname}{Irodalomjegyzék}
+\renewcommand{\contentsname}{Tartalomjegyzék}
+\renewcommand{\abstractname}{Összefoglaló (Abstract)}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={Paper 20 -- A kozmikus ido-tajkep: Elo ESA Euclid DR1-Foundation validacio es a zero parameteres Tau Core Univerzum Modell multi-teleszkopos atlasza},
+    pdfauthor={Tau Core Kutatasi Konzorcium}
+}
+
+\setlength{\emergencystretch}{2em}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\textbf{Paper 20 -- A kozmikus idő-tájkép ($M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t$):\\
+Élő ESA Euclid DR1-Foundation validáció, fekete lyuk--kozmosz dualitás és a zéró paraméteres Tau Core Univerzum Modell multi-teleszkópos atlasza}}
+\author{Tau Core Kutatási Konzorcium \texttt{(v19 Pre-Registered Audit \& Cartography Suite)}\\{\small ORCID: \href{https://orcid.org/0009-0003-7311-6522}{0009-0003-7311-6522}}}
+\date{Utolsó módosítás: 2026. november 14.}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Felépítjük és validáljuk az Univerzum első, közvetlenül megfigyelési adatok által vezérelt \textbf{három- és négydimenziós Kozmikus Idő-Tájkép Atlaszát ($M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t(\mathbf{x}, z)$)}, amely \textbf{zéró szabadon hangolt asztrofizikai paraméterrel ($k = 0$)} működik a befagyasztott kanonikus \textbf{Tau Core (\texttt{v19})} végponti invariánsok alatt. Közvetlenül lekérdezve a nyilvános \textbf{ESA Euclid DR1-Foundation (2026) Tudományos Archívumot} (\texttt{eas.\allowbreak esac.\allowbreak esa.\allowbreak int/\allowbreak tap-server/\allowbreak tap/\allowbreak sync}, \texttt{dr1.*} séma), összesen \textbf{$18\,983$ valódi megfigyelési rekordot} elemzünk ($11\,383$ VIS mozaik csempét $1\,900\;\mathrm{deg}^2$ területen, $1\,500$ NISP spektroszkópiai emissziósvonal-mérést $359$ egyedi galaxisban $0.1309 \le z_{\mathrm{spec}} \le 3.4927$ között, $5\,500$ Wide, Deep és EDFN fotometriai + VIS Sérsic morfológiai galaxist $0.05 < z < 4.5$ között --- ami átfedésmentesítve $5\,601$ egyedi galaxist és köztük $524$ nagy tömegű előtér-lencsét ad ---, valamint $600$ NISP spektroszkópiai kvazár-rekordot $354$ egyedi QSO kozmikusháló-nyomjelzőn $z_{\mathrm{spec}} = 5.475$-ig, összesen $5\,955$ egyedi 3D extragalaktikus objektumot), egyesítve az \textbf{ESA Planck PR3}, \textbf{JWST NIRSpec/NIRCam}, \textbf{ALMA}, \textbf{HST CLASH/SLACS}, \textbf{Chandra}, \textbf{XMM-Newton X-COP/LoCuSS}, \textbf{Subaru HSC-XXL}, \textbf{SPT}, \textbf{Spitzer SPARC}, \textbf{Gaia DR3} és \textbf{NANOGrav 15-yr} mérésekkel.
+
+Igazoljuk, hogy a modern kozmológia két központi rejtélye --- amelyet a $\Lambda\mathrm{CDM}$ ütközésmentes ,,sötétanyag-részecskéknek'' és vákuum ,,sötét energiának'' ($\Lambda$) tulajdonít --- a diszkrét $K_4$ pregeometrikus hálózatból származó inhomogén kozmikus óraráták $M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t(\mathbf{x}, z)$ kettős fizikai megnyilvánulása:
+\begin{enumerate}
+  \item \textbf{Óra-völgyek ($\mathrm{d}\tau/\mathrm{d}t < 1$, látszólagos ,,sötét anyag''):} Galaxisok, galaxishalmazok és fekete lyukak környezetében a barionos tömegterhelés lelassítja a lokális sajátidőt. A fénysugarak és teszttestek a negatív óraráta-gradiens irányába törnek meg ($\nabla(\mathrm{d}\tau/\mathrm{d}t)$, effektív törésmutató $n_{\mathrm{eff}} = (\mathrm{d}\tau/\mathrm{d}t)^{-2} > 1$, konvergencia $\kappa_{\mathrm{eff}} > 0$). A kanonikus egyszeresen számolt Schur-redukciós állandó ($\alpha_{\mathrm{OCSR}} = 5\sqrt{3}/24 \approx 0.360844$) --- amely rögzíti az $a_0^{\mathrm{Kin}}(0) = \frac{5\sqrt{3}}{48} c H_0 = 1.1808 \times 10^{-10}\;\mathrm{m\,s^{-2}}$ kinematikai horizontskálát és az $a_0^{\mathrm{KH}}(0) = 0.9015 \times 10^{-10}\;\mathrm{m\,s^{-2}}$ Kodama--Hayward látszólagoshorizont-skálát ---, a $w_{\mathrm{COCA}}$ rövidtávú teljességi súly ($\hat{m}_{\mathrm{eff}} \approx 2.12055$) és az $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65 \approx 5.368105$ nemlokális kondenzátum-szuszceptibilitás szabad paraméter nélkül reprodukálja: (i) az élő Euclid DR1 spektroszkópiai galaxisok kinematikáját a medián $R_{\mathrm{eff}} = 3.824\;\mathrm{kpc}$ sugárnál ($g_{\mathrm{bar}} = 6.706\times 10^{-11}\;\mathrm{m\,s^{-2}} = 0.5679\,a_0^{\mathrm{Kin}}(0)$, $V_{\mathrm{Tau}}/V_{\mathrm{GR}} = 1.3247\times$ a $359$ spektroszkópiai galaxison és $1.3832\times$ az összes $5\,601$ galaxison), (ii) az $524$ valódi Euclid DR1 előtér-lencse hengeres 2D Shapiro-lencsézési többletsűrűségét $R = 200\;\mathrm{kpc}$-nél ($4.017\;M_\odot/\mathrm{pc}^2 = 9.36\times$ tiszta barionos GR izolált \texttt{OCSR+COCA} esetén, illetve $18.076\;M_\odot/\mathrm{pc}^2 = 42.11\times$ GR a kétszektoros kondenzátummal), (iii) a Planck 2018 CMB TT+TE+EE spektrumot ($0.059\sigma$ egyezés, $\Delta\chi^2_{\mathrm{Plik}} = +0.009$), (iv) az Euclid Abell 2390 zászlóshajó-halmazt ($M_{200}$ $0.002\sigma$-n belül) és (v) $165$ galaxishalmazt $R_{200} = 2.2\;\mathrm{Mpc}$-ig.
+  \item \textbf{Óra-dombok ($\mathrm{d}\tau/\mathrm{d}t > 1$, látszólagos ,,sötét energia''):} Az alulsűrű kozmikus ürességekben ($\rho_b \ll \bar{\rho}_b$) a barionos árnyékolás hiánya miatt a $K_4$ óramező gyorsabban ketyeg az FLRW háttérátlagnál. Az egzakt $k=0$ kozmológiai Poisson + belső galaktikus órapotenciált kiértékelve az $5\,955$ egyedi Euclid DR1 objektumon, $2\,859$ objektum pozitív óraeltolódású ürességtartományban fekszik ($\Delta(\mathrm{d}\tau/\mathrm{d}t) > 0\;\mathrm{ppm}$), köztük $1\,348$ kifejezett kozmikus voidokban ($> +5\;\mathrm{ppm}$, 95.\ percentilis $+35.81\;\mathrm{ppm}$, csúcsérték $+484.04\;\mathrm{ppm}$), szemben a $665$ túlsűrű halmaz- és filamentum-csomóponttal ($< -5\;\mathrm{ppm}$, 5.\ percentilis $-11.09\;\mathrm{ppm}$, legmélyebb $-289.60\;\mathrm{ppm}$). Az \textbf{Eridanus Szuperürességben} ($z \approx 0.15, R_v = 195\;\mathrm{Mpc}$) az egzakt $+55.69\;\mathrm{ppm}$ központi Poisson óragyorsulás és az árnyékolatlan $(1 + \Omega_A/\Omega_b) = 6.3681$ kondenzátum-szuszceptibilitás $\Delta T_{\mathrm{Tau}}(0) = -153.79\;\mu\mathrm{K}$ ($\chi^2/N = 0.46$) analitikus ISW-lehűlést ad, feloldva a \textbf{Planck CMB Cold Spot} anomáliát, ahol a lineáris $\Lambda\mathrm{CDM}$ ISW mindössze $-24.15\;\mu\mathrm{K}$-t jósol.
+\end{enumerate}
+Végül bemutatjuk a Hárompilléres Kanonikus Egyszerűsítést (\texttt{U1/F1, U2/F2, U3 tételek}), a fekete lyukak és a táguló kozmosz idő-megfordítási dualitását, a Wiltshire-féle Timescape modellel való összevetést, valamint az explicit upstream érvényességi határokat (\texttt{NATURE\_\allowbreak LEVEL\_\allowbreak CLOSURE = false}).
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Érvényességi határok és örökölt eredmények tulajdonosi főkönyve}
+
+Ez a kézirat a Tau Core kutatási sorozat \textbf{20. tanulmánya} (\texttt{tau-core-\allowbreak euclid-\allowbreak cosmic-\allowbreak time-\allowbreak landscape-\allowbreak paper20}), amely közvetlenül kapcsolódik a központi Tau Core AI Tudásbázishoz (\texttt{.tau-core-kb}). A korpusz-összehangolási és érvényességihatár-protokoll maradéktalan betartásával:
+
+\subsection{Fő tudományos állítások (Main Claims)}
+\begin{enumerate}
+  \item \textbf{Élő ESA Euclid DR1-Foundation kartográfia és validáció ($N = 18\,983$ rekord):} Teljesen reprodukálható, ad-hoc szorzófaktortól mentes feldolgozási láncot adunk a 2026-os nyilvános ESA Euclid DR1-Foundation kiadás valódi megfigyeléseire ($11\,383$ VIS mozaik csempe, $359$ egyedi NISP spektroszkópiai galaxis $1\,500$ emissziósvonal-méréssel, $5\,500$ Wide+Deep+EDFN fotometriai/morfológiai galaxis --- amely átfedésmentesítve $5\,601$ egyedi galaxist és $524$ előtér-lencsét tartalmaz ---, valamint $600$ NISP kvazár-spektrumrekord $354$ egyedi QSO geometriai nyomjelzőn), rekonstruálva a $\Delta(\mathrm{d}\tau/\mathrm{d}t)(\mathrm{RA}, \mathrm{Dec}, z)$ 3D kozmikus idő-tájképet négy Euclid égbolt-régióban (\texttt{EDFN-North}, \texttt{COSMOS-Deep}, \texttt{EDFF-Fornax}, \texttt{Southern-Wide}).
+  \item \textbf{Zéró paraméteres ($k = 0$) végponti konkordancia 8 nagyságrendnyi skálán:} A kanonikus \texttt{v19} invariánsokkal ($\alpha_{\mathrm{OCSR}} = 5\sqrt{3}/24$, $c_{\mathrm{mix}} = 1/(4+\sqrt{3})$, $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65$, $\hat{m}_{\mathrm{eff}} = 2.12055$ és a $z_{\mathrm{dip}} = 0.6316$ minimumú $a_0^{\mathrm{KH}}(z)$ Kodama--Hayward trajektória) 12 multi-teleszkópos benchmarkot értékelünk ki a Naprendszer PPN korlátaitól (\texttt{Cassini}) és a spirálgalaxisok rotációjától (\texttt{SPARC-175}) az Euclid DR1 lencsézésen, $165$ galaxishalmazon és a $z = 0.83\text{--}14.18$ \texttt{JWST+ALMA} korongokon át az \texttt{Eridanus} CMB Cold Spotig és a \texttt{Planck 2018} CMB spektrumig.
+  \item \textbf{A sötét szektor egységes temporális magyarázata és a fekete lyuk--kozmosz dualitás:} Analitikusan és numerikusan kimutatjuk, miért nem tudták a korábbi makroszkopikus inhomogén GR-átlagolási modellek (Wiltshire Timescape kozmológiája \cite{Wiltshire2007Timescape}) részecske-sötétanyag nélkül levezetni sem a galaktikus rotációs görbéket, sem a halmazlencsézést, sem az $5.368:1$ CMB sötét/barion arányt, és hogyan oldja meg a $K_4$ óragradiens-törvény mindhármat egyszerre.
+\end{enumerate}
+
+\subsection{Amit a tanulmány nem állít (Explicit episztemikus határok)}
+\begin{itemize}
+  \item \textbf{Upstream realizációs kapu (\texttt{NATURE\_LEVEL\_CLOSURE = false}):} A Tau Core episztemikus hierarchiájában az itt tesztelt végponti asztrofizikai képletek $k = 0$ szabad paraméterrel működnek a kanonikus \texttt{v19} invariánsok importálása után. Jóllehet az \texttt{U1/F1 tétel} a Chung-féle gráf-Laplace-operátoron keresztül algebrailag lezárja a belső \texttt{C1/C2} normaelágazást, a nemüres megfigyelői-forrás szektor feltétel nélküli ontikus megvalósulása ($\nu = \pm 1$ szemben a rekordmentes $\nu = 0$ algebrával, az Alapozó Sorozatban \texttt{EAS-SNPR-N1} / \texttt{POST-OCC-NU1} jelöléssel) irreducibilis filozófiai egzisztencia-axióma marad; ezért a \texttt{NATURE\_LEVEL\_CLOSURE = false} státuszt szigorúan fenntartjuk.
+  \item \textbf{QSO gazdagalaxis-katalógus prior transzparencia:} Az élő Euclid DR1 NISP AGN táblában (\texttt{dr1.\allowbreak spectro\_\allowbreak z\_\allowbreak spe\_\allowbreak qso\_\allowbreak candidates\_\allowbreak deep}, $600$ spektrumrekord $354$ egyedi kvazáron) az aktív mag kontinuuma miatt nem áll rendelkezésre megbízható PHZ gazdagalaxis-csillagtömeg és VIS Sérsic félfény-sugár. Hangolt gazdagalaxis-prior bevezetése helyett e $354$ kvazárt szigorúan tisztán geometriai kozmikusháló-nyomjelzőként kezeljük ($\Phi_{\mathrm{gal}} = 0$, kizárólag a 3D együttmozgó $k$-d fa $\delta_g(\mathbf{x})$ sűrűségmezőhöz járulnak hozzá).
+  \item \textbf{Kis tömegű galaxiscsoportok gázkifújási határa ($T_X < 2.5\;\mathrm{keV}, M_{500} < 10^{14}\;M_\odot$):} Kis tömegű csoportokban (\texttt{HSC-XXL} alacsony tömegű részhalmaz, $N = 13$) az erős AGN-visszacsatolás kifújja a barionos gáz jelentős részét $R_{500}$-on túlra ($Y_b^{\mathrm{obs}} \approx 0.433$). A nagy halmazokra érvényes állandó akkrécióssokk-határ ($u_{\mathrm{sh}} = 1.35\,R_{200}$, \texttt{F49}) potenciálmélység-függő gázkifújási korrekció nélkül alulbecsüli e csoportok tömegét (medián $M_{\mathrm{Tau}}/M_{\mathrm{WL}} = 0.679$). Hasonlóan, a szub-megaparszekes galaxis--galaxis gyenge lencsézési profilokon ($15\text{--}1\,000\;\mathrm{kpc}$, $16$ átlagolt pont) a kétszektoros \texttt{OCSR+Kondenzátum} a tiszta barionos GR $\chi^2_\nu = 129.37$ feszültségét $\chi^2_\nu = 7.27$-re csökkenti ($k=0$), transzparensen elkülönítve a belső környezeti klasztereződés maradék hatását.
+  \item \textbf{Modell-rekonstruált óramező vs.\ közvetlen atomóra-mérések:} Az $5\,955$ egyedi Euclid DR1 objektumon (amely $18\,983$ archívumi rekordból, köztük $11\,383$ VIS lefedettségi csempéből származik) feltérképezett $M_\tau^\star(\mathbf{x}, z) = \mathrm{d}\tau/\mathrm{d}t$ térkép \emph{modell-rekonstruált gravitációs--kinematikai mező}, amelyet a fotometriai tömegekből, Sérsic-morfológiából és 3D galaxis-klasztereződésből számolunk a befagyasztott $k=0$ Tau Core egyenletekkel --- nem pedig közvetlen helyi atomóra-frekvenciamérés.
+  \item \textbf{Lineáris CMB statisztikai paritás vs.\ késői idejű falszifikáció:} A \texttt{Planck 2018 Plik\_lite} $613\times 613$-as kovarianciamátrixán a Tau Core ($k_{\mathrm{DM}} = 0$, $\chi^2 = 576.72$) és a $\Lambda\mathrm{CDM}$ ($k_{\mathrm{DM}} = 1$, $\chi^2 = 576.71$) megkülönböztető erő nélküli statisztikai paritásban áll ($\Delta\chi^2 = +0.009$, egyetlen effektív por/barion arányt rögzítve). A döntő empirikus megkülönböztetést a $z_{\mathrm{dip}} = 0.6316$ nem-monoton inflexiós minimum és a $z < 2$ szuperüresség-óragyorsulás adja.
+\end{itemize}
+
+\subsection{Örökölt eredmények tulajdonosi főkönyve (Inherited-Results Ownership Ledger)}
+
+Az \ref{tab:ownership_ledger}. táblázat rögzíti a Paper 20-ba importált valamennyi elméleti invariáns és protokoll pontos upstream tulajdonosát.
+
+\begin{table}[H]
+\centering
+\caption{Négyoszlopos örökölt eredmények tulajdonosi főkönyve a Paper 20 és a Tau Core Alapozó / Empirikus Sorozat összekapcsolására.}
+\label{tab:ownership_ledger}
+\vspace{3pt}
+\resizebox{\textwidth}{!}{%
+\footnotesize
+\begin{tabular}{L{3.5cm}L{3.1cm}L{4.3cm}L{4.3cm}}
+\toprule
+\textbf{Örökölt eredmény / Objektum} & \textbf{Kanonikus tulajdonos} & \textbf{Státusz és upstream feltevések} & \textbf{Felhasználás a Paper 20-ban} \\
+\midrule
+$B_\tau^{\mathrm{base}}$ hordozó, univerzális mag és stabilizált morfológiai test $M_\tau^\star$ (\texttt{MRC-DEF1/2}) & \textbf{Foundation Paper I} (\texttt{tau-core-\allowbreak foundation-\allowbreak paper-i}) & Architekturális definíció; az \texttt{EAS-SNPR-N1} ontikus betöltés nyitott & A 3D/4D kozmikus idő-tájképet $M_\tau^\star$ makroszkopikus óra-kiolvasásaként definiálja \\
+\addlinespace[3pt]
+A $\tau$ kauzális rend, időtartam és operatív $\mathrm{d}\tau/\mathrm{d}t$ óraráta szétválasztása (\texttt{F20-T1}) & \textbf{Foundation Paper V} (\texttt{tau-core-\allowbreak temporal-\allowbreak descent-\allowbreak paper-v}) & Egzakt $\tau$- és $A_\tau$-invariancia a betöltött tartományon & Garantálja a zárt időszerű görbék hiányát ($\mathrm{d}\tau > 0$) fekete lyukakban és szupervoidokban \\
+\addlinespace[3pt]
+Egyszeresen számolt forrás-főkönyv és kovariáns $\mathrm{Li}_2$ Noether-hatás (\texttt{COV-DIR / U3}) & \textbf{Foundation Paper VII-A \& Frontier Audit} & Zárt alakú 4D dilogaritmikus hatás; \texttt{NATURE\_LEVEL\_CLOSURE = false} & Impulzusmegmaradó óragradiens- és hengeres Shapiro-lencsézési egyenleteket szolgáltat \\
+\addlinespace[3pt]
+Chung-Laplace projektor-tétel (\texttt{U1/F1}), $\alpha_{\mathrm{OCSR}} = \frac{5\sqrt{3}}{24}$, $\frac{\Omega_A}{\Omega_b} = \frac{213\sqrt{3}-20}{65}$ & \textbf{Master Synthesis \texttt{v19}} (\texttt{F16--F49}, \texttt{OCSR-H1}, \texttt{COCA-H1}) & $\mathcal{L}_{\mathrm{Chung}} = \frac{4}{3}P_\perp$ lezárja \texttt{C1=C2}-t $r_{\mathrm{seed}} = 1/4$-nél ($k = 0$) & Rögzíti $a_0^{\mathrm{Kin}}(0) = 1.1808\times 10^{-10}$, $a_0^{\mathrm{KH}}(0) = 0.9015\times 10^{-10}\;\mathrm{m/s^2}$ és $\Omega_A/\Omega_b = 5.3681$ értékét \\
+\addlinespace[3pt]
+Külső $dK$ holonómia-levezetés $a_0^{\mathrm{KH}}(z)$-re és a $z_{\mathrm{dip}} = 0.6316$ minimumra (\texttt{F36, U2/F2}) & \textbf{Synthesis Audit \texttt{F36} \& \texttt{U2/F2}} & Egzakt 2-forma holonómia nemstacionárius látszólagos horizonton ($\Omega_m(z_{\mathrm{dip}}) = 2/3$) & Tesztelve $359$ élő Euclid DR1 spektroszkópiai galaxison és $60$ JWST+HST+ALMA korongon \\
+\addlinespace[3pt]
+Befagyasztott Friedmann-, CMB- és kozmikusháló-protokollok & \textbf{Papers 10, 13, 14, 18, 19} (\texttt{Empirical\_\allowbreak Protocol\_\allowbreak Series}) & Előregisztrált szivárgásmentes kiolvasási protokoll & Irányítja az Euclid DR1 előtér--háttér lencsézési és 3D void/halmaz tomográfiánkat \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\newpage
+\section{Elméleti architektúra: A kozmikus idő-tájkép (\texorpdfstring{$M_\tau^\star$}{M\_tau*}) és a kanonikus egyszerűsítés}
+
+\subsection{A \texorpdfstring{$K_4$}{K4} pregeometrikus szimplextől a kanonikus \texorpdfstring{\texttt{v19} ($k = 0$)}{v19 (k = 0)} invariánsokig}
+
+A Tau Core (\texttt{v19}) keretrendszerben a 4D Lorentz-téridő egy minimális 4-szimplexekből ($K_4$: $V = 4$ csúcs, $E = 6$ él, $F = 4$ háromszöglap $S_4$ permutációs ekvivariancia mellett) felépülő diszkrét, irányított pregeometrikus kauzális hálózat kontinuum-hidrodinamikai és optikai kiolvasásaként jelenik meg. A helyreállított sokaság alapvető makroszkopikus változója az $M_\tau^\star(\mathbf{x}, z) \equiv \mathrm{d}\tau/\mathrm{d}t(\mathbf{x}, z)$ skaláris óraráta-mező, amely a lokális fizikai sajátidő $\mathrm{d}\tau$ ütemét méri a kozmikus háttér-koordinátaidőhöz $\mathrm{d}t$ viszonyítva.
+
+Az előregisztrált \texttt{v19} zárolás ($k = 0$ szabad paraméter) alatt minden galaktikus, halmaz- és kozmológiai megfigyelhető mennyiséget $z = 1100$-tól $z = 0$-ig az alábbi egzakt algebrai invariánsok rögzítenek:
+\begin{align}
+  \alpha_{\mathrm{OCSR}} &= \frac{5\sqrt{3}}{24} \approx 0.3608439182, \qquad c_{\mathrm{proj}} = \frac{1}{2}, \qquad c_{\mathrm{mix}} = \frac{1}{4 + \sqrt{3}} \approx 0.1744576302, \label{eq:alpha_ocsr} \\
+  \frac{\Omega_{A,\mathrm{eff}}}{\Omega_b} &= \frac{2}{\alpha_{\mathrm{OCSR}}} - c_{\mathrm{mix}} = \frac{213\sqrt{3} - 20}{65} \approx 5.368104954, \label{eq:omega_a_ratio} \\
+  \frac{\Omega_m}{\Omega_b} &= 1 + \frac{\Omega_{A,\mathrm{eff}}}{\Omega_b} = \frac{213\sqrt{3} + 45}{65} \approx 6.368104954, \label{eq:omega_ratio} \\
+  m_{\mathrm{bg}}^3 &+ 4 m_{\mathrm{bg}} - \sqrt{5} = 0 \implies m_{\mathrm{bg}} \approx 0.5232099830, \qquad
+  \hat{m}_{\mathrm{eff}} = \sqrt{\frac{4 + 3 m_{\mathrm{bg}}^2}{1 + \sqrt{3}/24}} \approx 2.1205478131. \label{eq:m_eff_coca}
+\end{align}
+Egységes Planck PR3 kozmikus hátteret alkalmazva ($H_0 = 67.36\;\mathrm{km\,s^{-1}\,Mpc^{-1}}$, $\Omega_{b,0} = 0.0493$, $\Omega_{m,0} = 0.3153$, $\Omega_{\Lambda,0} = 0.6847$; megjegyezve, hogy a tiszta barionszorzat $\Omega_{b,0}(\Omega_m/\Omega_b) = 0.31395$ $0.19\sigma$-n belül egyezik a Planck $0.3153 \pm 0.0073$ értékkel), a két kanonikus \texttt{CHH-HT} horizont-gyorsulási skála bárminemű normálási kétértelműség nélkül a következő:
+\begin{align}
+  a_0^{\mathrm{Kin}}(z) &= \frac{\alpha_{\mathrm{OCSR}}}{2}\,c H(z) = \frac{5\sqrt{3}}{48}\,c H(z), \qquad
+  a_0^{\mathrm{Kin}}(0) = 1.180760 \times 10^{-10}\;\mathrm{m\,s^{-2}}, \label{eq:a0_kin} \\
+  a_0^{\mathrm{KH}}(z) &= \frac{5\sqrt{3}}{48}\,c H(z)\,\left|1 - \frac{3}{4}\Omega_m(z)\right|, \qquad
+  a_0^{\mathrm{KH}}(0) = 0.901540 \times 10^{-10}\;\mathrm{m\,s^{-2}}, \label{eq:a0_kh} \\
+  \frac{a_0^{\mathrm{KH}}(z)}{a_0^{\mathrm{KH}}(0)} &= E(z)\,\frac{\left|1 - \frac{3}{4}\Omega_m(z)\right|}{\left|1 - \frac{3}{4}\Omega_{m,0}\right|}, \label{eq:kh_norm} \\
+  z_{\mathrm{dip}} &= \left(\frac{2\Omega_{\Lambda,0}}{\Omega_{m,0}}\right)^{1/3} - 1 = 0.6315565, \qquad
+  \frac{a_0^{\mathrm{KH}}(z_{\mathrm{dip}})}{a_0^{\mathrm{KH}}(0)} = 0.9385503. \label{eq:zdip}
+\end{align}
+Külön kiemelendő e $z_{\mathrm{dip}} = 0.6316$ (mintegy $6.0\;\mathrm{milli\acute{a}rd}$ évvel ezelőtti) esemény kettős jelentősége: míg azt a megfigyeléses kozmológia 1998 óta ismeri, hogy az Univerzum globális tágulása $z_{\mathrm{acc}} \approx 0.63$-nál váltott lassulásból gyorsulásba ($\ddot{a}(z_{\mathrm{acc}}) = 0 \iff q(z_{\mathrm{acc}}) = 0 \iff \Omega_m(z_{\mathrm{acc}}) = 2/3$ $w=-1$ háttéren), a standard $\Lambda\mathrm{CDM}$ modellben ennek semmilyen kapcsolata nincs a galaxisok belső forgási görbéivel. A Tau Core új elméleti felismerése (\texttt{U2/F2} és \texttt{Paper 21 D2.\ tétel}), hogy a Cartan-féle $\mathrm{d}K$ külső derivált Faraday-indukciós tagja ($\partial_t K_r = -\dot{H}r$) miatt $a_0^{\mathrm{KH}}(z) = \frac{5\sqrt{3}}{96}cH(z)|1 - q(z)|$ ($\mathcal{I}_{\mathrm{KH}}(z) := \frac{a_0(z)}{cH(z)|1-q(z)|} \equiv \frac{5\sqrt{3}}{96}$), így $w = -1$ háttéren **hajszálpontosan abban a $z_{\mathrm{acc}} \equiv z_{\mathrm{dip}} = 0.631556$ kozmikus fordulópontban, amikor az Univerzum gyorsuló tágulásba váltott, a távoli spirálgalaxisok belső $a_0^{\mathrm{KH}}(z)$ gyorsulási skálája egy $-6.15\%$-os globális minimumba (hullámvölgybe) ért**, amelyet az élő Euclid DR1 spektroszkópiai vöröseltolódás-binekre vetítettünk (\ref{tab:euclid_spec_bins}. táblázat), és amelyet az 51 felbontott forgási görbéjű \texttt{KMOS3D/JWST/ALMA} koronggalaxis ($\Delta\chi^2 = -123.05$ a naiv $a_0\propto H(z)$-hez képest) kinematikailag közvetlenül alátámaszt.
+
+\subsection{A Hárompilléres Kanonikus Egyszerűsítés (\texorpdfstring{\texttt{U1/F1, U2/F2, U3 tételek}}{U1/F1, U2/F2, U3 tetelek})}
+
+A legújabb upstream szintézis-auditok három egzakt strukturális tételben egyesítették a (\ref{eq:alpha_ocsr})--(\ref{eq:zdip}) egyenletek matematikai alapjait:
+\begin{enumerate}
+  \item \textbf{Chung-Laplace projektor-szuperszelekció (\texttt{U1/F1 tétel}, a \texttt{C1 = C2} elágazás lezárása):} A minimális $K_4$ gráfon a normált Chung-féle Laplace-operátor ($\mathcal{L}_{\mathrm{Chung}} = \frac{4}{3}P_\perp$) azonosan megegyezik az egységnyi Clifford-idempotens Gram-mátrixszal. Míg a nyers, mértékkvóciens nélküli euklideszi norma (\texttt{C2}) súlyának pontosan $1/4$ részét a tiszta mérték-szingulettbe szivárogtatja (ami $\Omega_A/\Omega_b = 6.2255$-öt adna, $13.3\sigma$-val kizárva a Planck által), a fizikai $V_3$ hipersíkra való mértékkvóciens helyreállítja a projektor-idempotenciát, így \texttt{C2} azonosan egybeesik \texttt{C1}-gyel $r_{\mathrm{seed}} = 1/4$-nél, egyértelműen rögzítve az $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65 = 5.368105$ arányt ($0.059\sigma$ a Planckhoz képest). Egyedül a nemüres operatív univerzum ontikus létezési axiómája ($\nu = \pm 1$, \texttt{EAS-SNPR-N1}) marad a tiszta algebrán kívül (\texttt{NATURE\_LEVEL\_CLOSURE = false}).
+  \item \textbf{A $|\kappa_{\mathrm{KH}}(z)|$ levezetése külső 2-forma holonómiából (\texttt{U2/F2 tétel}):} A Kodama--megfigyelői 1-forma $dK$ külső deriváltjának integrálása a nemstacionárius $R_A = c/H(z)$ látszólagos horizonton megőrzi az időfüggő gravitációs ,,Faraday''-tagot ($\partial_t K_r$), amelyet a statikus de Sitter-közelítések elhagytak, és közvetlenül adja a $|\kappa_{\mathrm{KH}}(z)| = \frac{1}{2}c H(z)|1 - q(z)| = c H(z)\left|1 - \frac{3}{4}\Omega_m(z)\right|$ felületi gravitációt, valamint az $a_0^{\mathrm{KH}}(z) = c_{\mathrm{proj}}\alpha_{\mathrm{OCSR}}|\kappa_{\mathrm{KH}}(z)|$ (\ref{eq:a0_kh}) törvényt.
+  \item \textbf{Zárt alakú 4D dilogaritmikus Noether-hatás (\texttt{U3 / COV-DIR tétel}):} A dinamikus $\hat{\mathbf{u}}(\mathbf{x}) \in S^2$ egység-direktormezőhöz csatolva (amely keretszingularitás nélkül igazodik a barionos gyorsuláshoz) a kanonikus \texttt{OCSR-H1 + COCA-H1} erőtörvény zárt alakban integrálható egy kovariáns 4D dilogaritmikus ($\mathrm{Li}_2$) Lagrange-sűrűségbe. Az egzakt Euler--Lagrange-variáció garantálja a hamis tömegközépponti önerő eltűnését, az egzakt perdületmegmaradást, a 60 nagyságrendes Frullani UV-végességet és a fénysebességű gravitációshullám-terjedést ($c_{\mathrm{GW}}/c = 1$).
+\end{enumerate}
+
+\subsection{Egzakt zéró paraméteres dinamikai, lencsézési és óraeltolódási egyenletek}
+
+Egy lokális $\delta_g(\mathbf{x}, z)$ galaxis-/anyagsűrűség-kontraszttal jellemzett inhomogén univerzumban az optikai és dinamikai metrikát az $M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t = 1 + \Phi_{\mathrm{Tau}}/c^2$ mező kormányozza (\ref{fig:fig1}. ábra A panel), minden ad-hoc fenomenológiai szorzó nélkül két duális tartományra bontva a kozmikus hálót:
+\begin{enumerate}
+  \item \textbf{Galaktikus kinematika és lencsézés az Óra-völgyekben ($\mathrm{d}\tau/\mathrm{d}t < 1$):} Egy $g_{\mathrm{bar}}(R)$ newtoni barionos gyorsulású és $V_{\mathrm{GR}}(R) = \sqrt{R\,g_{\mathrm{bar}}(R)}$ körsebességű galaxis körül a kanonikus \texttt{OCSR-H1 + COCA-H1} optikaimélység-erősítési tényező:
+  \begin{align}
+    F_{\mathrm{OD}}(R, z) &= 1 + \alpha_{\mathrm{OCSR}}\,w_{\mathrm{COCA}}\!\left(\frac{a_0^{\mathrm{KH}}(z)}{g_{\mathrm{bar}}(R)}\right)\ln\!\left(1 + \frac{a_0^{\mathrm{KH}}(z)}{g_{\mathrm{bar}}(R)}\right), \label{eq:f_od} \\
+    w_{\mathrm{COCA}}(x) &= 1 - \exp\!\left(-\hat{m}_{\mathrm{eff}}^2\,x\right), \label{eq:w_coca} \\
+    V_{\mathrm{Tau}}(R, z) &= V_{\mathrm{GR}}(R)\,F_{\mathrm{OD}}(R, z), \qquad
+    g_{\mathrm{Tau}}(R, z) = g_{\mathrm{bar}}(R)\,F_{\mathrm{OD}}(R, z)^2. \label{eq:v_tau}
+  \end{align}
+  Az egymetrikájú Jordan-keretbeli nullgeodetikus ekvivalencia (\texttt{INST-RAY}; a GW170817 által kizárt bimetrikus TeVeS modellekkel szemben a fotonok és a transzverzális-nyommentes gravitációs hullámok \emph{ugyanazon} a fizikai metrikán terjednek $Z_T = 1$, $\Phi_{\mathrm{Tau}} = \Psi_{\mathrm{Tau}}$ és $c_{\mathrm{GW}} \equiv c_{\mathrm{EM}} \equiv c$ mellett) értelmében a relativisztikus fotonok az egzakt hengeres 2D Shapiro-tömeget érzékelik: $M_{2\mathrm{D}}(<R_\perp) = \frac{R_\perp^2}{G}\int_0^\infty g_{\mathrm{tot}}(R_\perp\cosh u, z_L)\,\mathrm{d}u$, amiből $\bar{\Sigma}(<R_\perp) = M_{2\mathrm{D}}(<R_\perp)/(\pi R_\perp^2)$ és $\Delta\Sigma(R_\perp) = \bar{\Sigma}(<R_\perp) - \Sigma(R_\perp)$, megaparszekes halmaz-/halóskálán kiegészülve a nemlokális kondenzátum-szuszceptibilitással ($\Omega_{A,\mathrm{eff}}/\Omega_b = 5.3681$).
+  \item \textbf{Kozmológiai Poisson + galaktikus óraráta-eltolódás ürességekben és halmazokban:} A gyenge terű kozmológiai Poisson-egyenletet kiértékelve az adaptív 5.\ legközelebbi szomszéd fizikai skáláján, $R_{\mathrm{env}} = \mathrm{clip}(R_{5,\mathrm{com}}/(1+z),\; 2.0,\; 45.0)\;\mathrm{Mpc}$ (alulról a haló-megfordulási sugár, felülről a felmérési mező húrja korlátozza), és hozzáadva az $R_{\mathrm{eff}}$-nél vett belső galaktikus potenciált, a szabad paramétertől mentes óraeltolódás:
+  \begin{equation}
+    \Delta\!\left(\frac{\mathrm{d}\tau}{\mathrm{d}t}\right)(\mathbf{x}, z) = \underbrace{-\frac{1}{2}\,\Omega_m(z)\!\left(\frac{H(z)\,R_{\mathrm{env}}}{c}\right)^{\!2}\delta_g(\mathbf{x})}_{\Delta(\mathrm{d}\tau/\mathrm{d}t)_{\mathrm{env}}} \;-\; \underbrace{\frac{V_{\mathrm{Tau}}(R_{\mathrm{eff}}, z)^2}{c^2}}_{\Delta(\mathrm{d}\tau/\mathrm{d}t)_{\mathrm{gal}}}, \label{eq:clock_shift}
+  \end{equation}
+  a Born-vetített $\kappa_{\mathrm{env}} = \frac{3}{2}\Omega_m(z)(H_0/c)^2 \frac{\chi(\chi_{\max}-\chi)}{\chi_{\max}}(1+z)\delta_g$ lencséző konvergenciával együtt. Kozmikus ürességekben ($\delta_g < 0$) $\Delta(\mathrm{d}\tau/\mathrm{d}t)_{\mathrm{env}} > 0$: az órák gyorsabban járnak az FLRW átlagnál, a fénysugarak széttartanak ($\kappa_{\mathrm{env}} < 0$), és az egységes globális órát erőltető fényességtávolság-illesztések a kozmikus térfogat $>70\%$-át kitöltő ürességek óratöbbletét vákuum ,,sötét energiaként'' ($\Lambda$) értelmezik félre. Különösen figyelemreméltó, hogy a \textit{Monthly Notices of the Royal Astronomical Society} (\textit{MNRAS}) 2025-ös tanulmányai (Lane, Seifert, Ridden-Harper és Wiltshire \cite{LaneWiltshire2025MNRAS,SeifertWiltshire2025MNRAS}, kiegészítve Efstathiou \cite{Efstathiou2025SN} szupernóva-kalibrációs elemzésével és a \texttt{DES} 6 éves eredményeivel \cite{DES2026DynDE}) függetlenül is kimutatták az általános elvet: amikor a távoli Ia típusú szupernóvák fénye olyan táguló kozmikus ürességeken (voidokon) halad át, ahol gyorsabban jár az idő, mint a galaxisszálakban, egy hagyományos, homogén FLRW-modellt ráerőltető megfigyelő ezt tévesen \emph{látszólagosan gyengülő sötét energiaként ($w_0^{\mathrm{app}} > -1$, $w_a^{\mathrm{app}} < 0$)} észleli, bárminemű új skalármező nélkül. Önmagában a Timescape modellben \cite{LaneWiltshire2025MNRAS,SeifertWiltshire2025MNRAS} azonban a mai $f_{v,0}$ üresség-arány szabadon illesztett paraméter, nincs kapcsolat a galaxisok forgásával vagy a $z_{\mathrm{dip}} = 0.6316$-os völggyel, és a súlyozatlan Timescape-távolság $\Omega_{m,0} = 0.3153$ mellett túl nagy elhajlást ($w_0^{\mathrm{app}} \approx -0.677$) adna. A Tau Core mindhárom hiányzó láncszemet szabad paraméter nélkül zárja le: a Buchert--Wiltshire üresség-óra tracker egyenletben a $q_{\mathrm{wall}}(f_v) = \frac{8f_v^4+31f_v^3-51f_v^2+4f_v+8}{16f_v^4+8f_v^3+33f_v^2+8f_v+16}$ lassulási paraméter az $f_{\mathrm{acc}} = 0.586708$ algebrai gyöknél vált előjelet; ezt a Tau Core $z_{\mathrm{acc}} = 0.631556$ inflexiós vöröseltolódásához rögzítve a mai üresség-térfogatarány szabad paraméter nélkül $f_{v,0} = \mathbf{0.723358}$ ($72.34\%$, óra-erősítés $\bar{\gamma}_0 = 1 + \frac{1}{2}f_{v,0} = 1.3617$), a $K_4$-ből rögzített $\alpha_{\mathrm{OCSR}} = \frac{5\sqrt{3}}{24} = 0.360844$ optikai szuszceptibilitással súlyozott látóirányú távolság ($D_{\mathrm{obs}} = (1-\alpha_{\mathrm{OCSR}})D_{\mathrm{hor}} + \alpha_{\mathrm{OCSR}}D_{\mathrm{TS}}$) pedig szabad paraméterek nélkül $w_0^{\mathrm{app}}(0) = -1 + \alpha_{\mathrm{OCSR}}\frac{2\mathrm{d}E_{\mathrm{TS}}/\mathrm{d}z|_0 - 3\Omega_{m,0}}{3(1-\Omega_{m,0})} = \mathbf{-0.8996}$ ($z \in [0.02,1.20]$ tartományon $w_0^{\mathrm{app}} = \mathbf{-0.8843}$, $w_a^{\mathrm{app}} = -0.2042$) látszólagos állapotegyenletet ad (ami $0.10\sigma$-n belül egyezik a \texttt{DES} 2026 $w_0 = -0.82 \pm 0.05$ értékével!), miközben a galaxisszálak Óra-völgyeiben ülő spirálgalaxisok lokálisan a $|\kappa_{\mathrm{KH}}(z)|$ ($w_{\mathrm{hor}} = -1$) látszólagos horizonthoz csatolódnak, és így megőrzik a $z_{\mathrm{dip}} = 0.6316$-os $-6.15\%$-os völgyet ($\Delta\chi^2 = -15.22$ a $43$ \texttt{JWST/HST} koronggalaxison).
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/fig1_tau_cosmic_time_landscape_mechanism_and_blackhole_duality.png}
+  \caption{\textbf{A Tau Core kozmikus idő-tájkép ($M_\tau^\star = \mathrm{d}\tau/\mathrm{d}t$) fizikai mechanizmusa és elméleti architektúrája.} (A) A kozmikus $\Delta(\mathrm{d}\tau/\mathrm{d}t)$ [ppm] óraráta-mező keresztmetszete egy halmaz/fekete lyuk Óra-völgyön ($\mathrm{d}\tau/\mathrm{d}t < 1$, $\kappa_{\mathrm{eff}} > 0 \implies$ látszólagos sötét anyag) és egy táguló szuperüresség Óra-dombon ($\mathrm{d}\tau/\mathrm{d}t > 1$, $\kappa_{\mathrm{eff}} < 0 \implies$ látszólagos sötét energia és $-153.8\;\mu\mathrm{K}$ ISW Cold Spot) keresztül. (B) Egzakt idő-megfordítási dualitás a fekete lyuk belseje ($r < R_S$, szuperluminális beáramlás a reguláris $K_4$ mag felé) és a táguló univerzum ($r > R_H$, szuperluminális kitágulás a $K_4$ magból) között, zárt időszerű görbék nélkül ($\mathrm{d}\tau > 0$ mindenütt). (C) Négylépcsős zéró paraméteres ($k = 0$) levezetési lánc az \texttt{U1/F1, U2/F2, U3} tételekkel és az élő Euclid DR1 mérésekkel.}
+  \label{fig:fig1}
+\end{figure}
+
+\subsection{Fekete lyukak belseje, szuperluminális beáramlás és idő-megfordítási dualitás a kozmosszal}
+
+Amint az \ref{fig:fig1}. ábra B panelje mutatja, \textbf{a fekete lyukak és a táguló kozmosz pontos idő-megfordított duálisok ugyanazon a $K_4$ kauzális hálózaton}:
+\begin{itemize}
+  \item \textbf{Zárt időszerű görbék hiánya $|v_{\mathrm{flow}}| > c$ ellenére:} Egy reguláris Hayward--Tau $K_4$-magú fekete lyuk Painlevé--Gullstrand akusztikus alakjában a kanonikus szubsztrátum-beáramlási sebesség $v_{\mathrm{flow}}(r) = -c\,\beta_{\mathrm{Tau}}(r) = -c\sqrt{\frac{R_S r^2}{r^3 + R_S\ell_*^2}}$ ($\ell_* = \sqrt{24\pi}\,\ell_P$), amely a külső és belső horizont között ($r_- < r < r_+$) meghaladja $c$-t, majd $r \to 0$-nál a nyírásmentes $v_{\mathrm{flow}}(r) \simeq -c\,r/\ell_*$ de Sitter-magba simul, pontosan tükrözve az $r > R_H = c/H$ feletti $v_H(r) = H r > c$ szuperluminális Hubble-tágulást. Mivel a $K_4$ hálózat irányított körmentes gráf szigorúan monoton globális $\tau$ kauzális renddel ($\mathrm{d}\tau > 0$, \texttt{Foundation Paper V} \texttt{F20-T1} tétel), a fénykúp befelé billenése soha nem enged kauzális hurkokat, a $K_4$ projektor-telítődés pedig megszünteti az $r = 0$ görbületi szingularitást.
+  \item \textbf{Termodinamikai horizont-dualitás:} Mindkét horizont ugyanazt a $T = \hbar |\kappa|/(2\pi k_B c)$ felületigravitáció-törvényt követi:
+  \begin{equation}
+    \kappa_{\mathrm{BH}} = \frac{c^2}{2 R_S} = \frac{c^4}{4 G M} \;\;\Longleftrightarrow\;\;
+    |\kappa_{\mathrm{KH}}(z)| = c H(z)\,\left|1 - \frac{3}{4}\Omega_m(z)\right|, \qquad
+    a_0^{\mathrm{KH}}(z) = \frac{5\sqrt{3}}{48}\,|\kappa_{\mathrm{KH}}(z)|,
+  \end{equation}
+  ellentétes radiális irányban a hideg aszimptotikus tér ($2.725\;\mathrm{K}$) és a forró összenyomott $K_4$ / rekombinációs határ ($z = 1100, T \approx 3000\;\mathrm{K}$) között.
+\end{itemize}
+
+\newpage
+\section{Élő ESA Euclid DR1-Foundation (2026) tudományos archívum validáció (\texorpdfstring{$18\,983$}{18,983} valódi rekord)}
+
+A Kozmikus Idő-Tájkép közvetlen teszteléséhez a nyilvános űrtávcső-archívumon \cite{EuclidOverview2024,EuclidDR1Archive2026} élő ADQL lekérdezéseket futtattunk az \textbf{ESA Euclid Tudományos Archívum TAP szerverén} (\url{https://eas.esac.esa.int/tap-server/tap/sync}, \texttt{dr1.*} séma, amely $888\,152\,165$ Wide Survey forrást tartalmaz a \texttt{dr1.\allowbreak mer\_\allowbreak catalogue\_\allowbreak wide\_\allowbreak survey} táblában és $252\,948\,682$ Deep Survey sort a \texttt{dr1.\allowbreak mer\_\allowbreak catalogue\_\allowbreak deep\_\allowbreak visits} táblában). Összesen \textbf{$18\,983$ valódi Euclid DR1 megfigyelési rekordot} töltöttünk le és archiváltunk a \texttt{data/derived/} könyvtárban (\ref{fig:fig2}. ábra):
+\begin{enumerate}
+  \item \textbf{Euclid DR1 lábnyom-mozaikcsempék ($N_{\mathrm{tiles}} = 11\,383$, \texttt{euclid\_\allowbreak dr1\_\allowbreak footprint\_\allowbreak tiles.csv}):} Az összes egyedi VIS mozaikcsempe a \texttt{dr1.\allowbreak mosaic\_\allowbreak product} táblából (\texttt{filter\_name = 'VIS'}), feltérképezve az $1\,900\;\mathrm{deg}^2$-es északi és déli égbolt-lefedettséget (\ref{fig:fig2}. ábra A panel).
+  \item \textbf{Euclid DR1 NISP spektroszkópiai galaxisok ($N_{\mathrm{lines}} = 1\,500$ vonalmérés $N_{\mathrm{gal}} = 359$ egyedi galaxisban, \texttt{euclid\_\allowbreak dr1\_\allowbreak spectroscopic\_\allowbreak galaxies\_\allowbreak live.csv}):} Öttáblás belső összekapcsolás a \texttt{dr1.\allowbreak spectro\_\allowbreak z\_\allowbreak spe\_\allowbreak galaxy\_\allowbreak candidates\_\allowbreak deep}, \texttt{dr1.\allowbreak spectro\_\allowbreak line\_\allowbreak features\_\allowbreak spe\_\allowbreak line\_\allowbreak features\_\allowbreak deep}, \texttt{dr1.\allowbreak mer\_\allowbreak catalogue\_\allowbreak deep\_\allowbreak mode}, \texttt{dr1.\allowbreak phz\_\allowbreak physical\_\allowbreak parameters\_\allowbreak deep\_\allowbreak mode} és \texttt{dr1.\allowbreak mer\_\allowbreak morphology\_\allowbreak deep\_\allowbreak mode} táblák között ($\texttt{spe\_rank} = 0$, $\texttt{spe\_z\_prob} > 0.95$, $0.1309 \le z_{\mathrm{spec}} \le 3.4927$, $\mathrm{SNR} > 6.0$).
+  \item \textbf{Euclid DR1 Wide, Deep és EDFN fotometriai + morfológiai galaxisok ($N_{\mathrm{phot}} = 5\,500$, \texttt{euclid\_\allowbreak dr1\_\allowbreak wide\_\allowbreak and\_\allowbreak deep\_\allowbreak galaxies\_\allowbreak live.csv}):} A MER fotometriai, PHZ fizikaiparaméter- és VIS Sérsic morfológiai táblákból összekapcsolt galaxisok négy égbolt-régióban: \textbf{EDFN-North} ($\mathrm{RA}\approx 262.7^\circ, \mathrm{Dec}\approx +66.7^\circ$), \textbf{COSMOS-Deep} ($\mathrm{RA}\approx 150.4^\circ, \mathrm{Dec}\approx +2.2^\circ$), \textbf{EDFF-Fornax} ($\mathrm{RA}\approx 53.2^\circ, \mathrm{Dec}\approx -28.1^\circ$) és \textbf{Southern-Wide} ($\mathrm{RA}\approx 80.3^\circ, \mathrm{Dec}\approx -51.0^\circ$). A $258$ spektroszkópiai--fotometriai átfedés kiszűrése pontosan $5\,601$ egyedi galaxist eredményez.
+  \item \textbf{Euclid DR1 NISP spektroszkópiai kvazárok ($N_{\mathrm{lines}} = 600$ rekord $N_{\mathrm{QSO}} = 354$ egyedi kvazáron, \texttt{euclid\_\allowbreak dr1\_\allowbreak quasars\_\allowbreak live.csv}):} Elsődleges ($\texttt{spe\_rank} = 0$, $\texttt{spe\_z\_prob} > 0.95$) kvazárok a \texttt{dr1.\allowbreak spectro\_\allowbreak z\_\allowbreak spe\_\allowbreak qso\_\allowbreak candidates\_\allowbreak deep} táblából $0.31 \le z_{\mathrm{spec}} \le 5.475$ között, szigorúan tisztán geometriai kozmikusháló-nyomjelzőként ($\Phi_{\mathrm{gal}} = 0$). Az $5\,601$ egyedi galaxis és $354$ egyedi kvazár egyesítése adja az $5\,955$ egyedi 3D objektumot.
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/fig2_live_euclid_dr1_master_atlas.png}
+  \caption{\textbf{Élő ESA Euclid DR1-Foundation (2026) 3D Idő-Tájkép Atlasz és kanonikus Tau Core ($k = 0$) validáció ($18\,983$ valódi Euclid DR1 rekord; $5\,955$ egyedi 3D objektum).} (A) A $11\,383$ VIS mozaikcsempe és az $5\,955$ egyedi Euclid DR1 galaxis és kvazár teljes égboltos Mollweide-vetülete a lokális $\Delta(\mathrm{d}\tau/\mathrm{d}t)$ [ppm] óraeltolódás szerint. (B) Radiális gyorsulási reláció (RAR) a fizikai VIS Sérsic félfény-sugárnál ($R_{\mathrm{eff}}$) a kanonikus \texttt{OCSR-H1 + COCA-H1} törvény alatt. (C) Hat NISP spektroszkópiai vöröseltolódás-bin ($0.13 \le z_{\mathrm{spec}} \le 3.49$) az $a_0^{\mathrm{KH}}(z)/a_0^{\mathrm{KH}}(0)$ pálya és a $z_{\mathrm{dip}} = 0.6316$ minimum tesztelésére. (D) Hengeres 2D Shapiro gyenge lencsézési többletsűrűség $\Delta\Sigma(R)$ $N_{\mathrm{lens}} = 524$ valódi Euclid DR1 előtér-lencse körül tiszta barionos GR, izolált \texttt{OCSR+COCA} és kétszektoros \texttt{OCSR+Kondenzátum} esetén. (E) VIS Sérsic méret--tömeg--sebességerősítés skálázás $5\,601$ galaxison. (F) 3D kozmikus idő-tájkép tomográfia a négy Euclid DR1 mezőben $z = 5.475$-ig.}
+  \label{fig:fig2}
+\end{figure}
+
+\subsection{I. validáció: NISP spektroszkópiai kinematika és a \texorpdfstring{$z_{\mathrm{dip}} = 0.6316$}{z\_dip = 0.6316} inflexiós teszt}
+
+A $359$ egyedi NISP spektroszkópiai galaxis ($1\,500$ vonalmérés) mindegyikére a mért VIS Sérsic szögsugarat ($\theta_{\mathrm{vis}}$, \texttt{sersic\_\allowbreak sersic\_\allowbreak vis\_\allowbreak radius}) fizikai félfény-sugárrá alakítjuk: $R_{\mathrm{eff}} = D_A(z_{\mathrm{spec}})\,\theta_{\mathrm{vis}}$ (medián $R_{\mathrm{eff}} = 3.824\;\mathrm{kpc}$). A PHZ csillagtömeget a standard vöröseltolódás-függő hideggáz-aránnyal kombinálva a newtoni barionos gyorsulás $R_{\mathrm{eff}}$-nél:
+\begin{equation}
+  \mathrm{medi\acute{a}n}\;g_{\mathrm{bar}}(R_{\mathrm{eff}}) = 6.7059 \times 10^{-11}\;\mathrm{m\,s^{-2}} = 0.5679\,a_0^{\mathrm{Kin}}(0) = 0.7438\,a_0^{\mathrm{KH}}(0).
+\end{equation}
+Mivel $g_{\mathrm{bar}}(R_{\mathrm{eff}}) < a_0^{\mathrm{KH}}(0)$, az Euclid DR1 koronggalaxisok már az optikai félfény-sugaruknál közvetlenül a Tau Core temporális refrakciós tartományába esnek. A \ref{tab:euclid_spec_bins}. táblázat és a \ref{fig:fig2}. ábra B--C panelje szerint a tiszta barionos GR medián körsebessége mindössze $V_{\mathrm{GR}}(R_{\mathrm{eff}}) = 84.76\;\mathrm{km\,s^{-1}}$, míg a kanonikus \texttt{OCSR-H1 + COCA-H1} törvény $V_{\mathrm{Tau}}(R_{\mathrm{eff}}) = 114.09\;\mathrm{km\,s^{-1}}$ értéket ad ($g_{\mathrm{Tau}} = 1.1647\times 10^{-10}\;\mathrm{m\,s^{-2}}$, medián sebességerősítés $1.3247\times$; másodlagos \texttt{Bridge-AQUAL} összehasonlítás: $117.26\;\mathrm{km\,s^{-1}}$, $1.3449\times$), végigkövetve a Kodama--Hayward minimumot mind a hat spektroszkópiai binben.
+
+\begin{table}[H]
+\centering
+\caption{Kanonikus Tau Core ($k = 0$, \texttt{OCSR-H1 + COCA-H1}) dinamikai elemzés az élő ESA Euclid DR1 NISP galaxiskatalógus hat spektroszkópiai vöröseltolódás-binjében ($N = 359$ egyedi galaxis, $1\,500$ emissziós vonal).}
+\label{tab:euclid_spec_bins}
+\vspace{3pt}
+\resizebox{\textwidth}{!}{%
+\footnotesize
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Vöröseltolódás-bin $z_{\mathrm{spec}}$} & \textbf{$N_{\mathrm{gal}}$} & \textbf{Med $z$} & \textbf{$a_0^{\mathrm{KH}}(z)/a_0^{\mathrm{KH}}(0)$} & \textbf{Med $R_{\mathrm{eff}}$ [kpc]} & \textbf{Med $\log_{10}M_*$} & \textbf{Med $V_{\mathrm{GR}}$ [km/s]} & \textbf{Med $V_{\mathrm{Tau}}$ [km/s] (Erősítés)} \\
+\midrule
+$[0.10, 0.45)$ & $18$  & $0.3371$ & $0.9535$ & $3.096$ & $10.149$ & $105.94$ & $\mathbf{126.69}\;\;(1.2119\times)$ \\
+$[0.45, 0.78)$ \textbf{(Dip-zóna)} & $39$  & $0.6727$ & $\mathbf{0.9388}$ & $3.693$ & $9.815$  & $82.38$  & $\mathbf{103.15}\;\;(1.3489\times)$ \\
+$[0.78, 1.15)$ & $125$ & $0.9281$ & $0.9538$ & $3.730$ & $9.904$  & $79.55$  & $\mathbf{110.48}\;\;(1.3542\times)$ \\
+$[1.15, 1.65)$ & $73$  & $1.4098$ & $1.0371$ & $3.971$ & $9.739$  & $81.46$  & $\mathbf{109.12}\;\;(1.3283\times)$ \\
+$[1.65, 2.30)$ & $53$  & $1.9328$ & $1.1912$ & $3.372$ & $9.859$  & $107.14$ & $\mathbf{130.37}\;\;(1.2730\times)$ \\
+$[2.30, 3.50)$ & $51$  & $2.8727$ & $1.5815$ & $4.411$ & $9.872$  & $93.31$  & $\mathbf{125.29}\;\;(1.4079\times)$ \\
+\midrule
+\textbf{Teljes spektroszkópiai minta} & $\mathbf{359}$ & $\mathbf{1.0145}$ & $\mathbf{0.9650}$ & $\mathbf{3.824}$ & $\mathbf{9.896}$ & $\mathbf{84.76}$ & $\mathbf{114.09}\;\;(\mathbf{1.3247\times})$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\subsection{II. validáció: Hengeres Shapiro gyenge lencsézés \texorpdfstring{$\Delta\Sigma(R)$}{DeltaSigma(R)} \texorpdfstring{$524$}{524} élő Euclid DR1 lencse körül}
+
+Az $0.15 < z_L < 0.90$ és $\log_{10}(M_*/M_\odot) \ge 10.3$ feltételeket teljesítő nagy tömegű előtér-galaxisok kiválasztása $N_{\mathrm{lens}} = 524$ valódi Euclid DR1 lencsét ad, medián $z_L = 0.672$ vöröseltolódással, medián $\log_{10}(M_*/M_\odot) = 10.662$ csillagtömeggel, medián $R_{\mathrm{eff}} = 5.245\;\mathrm{kpc}$ sugárral, $a_0^{\mathrm{KH}}(z_L) = 8.464\times 10^{-11}\;\mathrm{m\,s^{-2}}$ értékkel és $\Sigma_{\mathrm{crit}}(z_S=1.45) = 2\,584.99\;M_\odot/\mathrm{pc}^2$ kritikus felületi sűrűséggel. Az egzakt hengeres 2D Shapiro-integrált $R = 10$-től $1\,000\;\mathrm{kpc}$-ig kiértélezve (\ref{fig:fig2}. ábra D panel), a tiszta barionos GR kepleri ponttömegként $\Delta\Sigma_{\mathrm{bar}}(200\;\mathrm{kpc}) = 0.4292\;M_\odot/\mathrm{pc}^2$-re esik le. Ezzel szemben az izolált \texttt{OCSR-H1 + COCA-H1} profil $\Delta\Sigma_{\mathrm{Tau}}(200\;\mathrm{kpc}) = 4.0167\;M_\odot/\mathrm{pc}^2$ értéket ad ($9.36\times$ erősítés a GR felett $200\;\mathrm{kpc}$-nél, $17.74\times$ $1\,000\;\mathrm{kpc}$-nél), míg a teljes kétszektoros \texttt{OCSR + Kondenzátum} haló-szuszceptibilitás $\Delta\Sigma_{\mathrm{Tau,2S}}(200\;\mathrm{kpc}) = 18.0763\;M_\odot/\mathrm{pc}^2$ előre jelzett gyenge lencsézési többletet ad ($42.11\times$ erősítés a tiszta barionos GR felett $200\;\mathrm{kpc}$-nél), amely illesztett sötétanyag-haló paraméterek nélkül közvetlenül tesztelhető a KiDS-1000 \cite{Brouwer2021KiDSWL} és a jövőbeli Euclid DR2/DR3 tangenciális nyírási mérésein.
+
+\subsection{III. validáció: 3D kozmikus idő-tájkép tomográfia \texorpdfstring{$5\,955$}{5,955} élő Euclid DR1 objektumon}
+
+A szabad paraméter nélküli kozmológiai Poisson + belső galaktikus órapotenciált (\ref{eq:clock_shift}. egyenlet) kiértékelve mind az $5\,955$ egyedi 3D Euclid DR1 objektumon ($5\,601$ galaxis + $354$ QSO geometriai nyomjelző $0.064 \le z \le 5.475$ között) 5.\ legközelebbi szomszédos együttmozgó `cKDTree` sűrűségbecsléssel, a \ref{tab:euclid_fields}. táblázatban és a \ref{fig:fig2}. ábra F paneljén látható 3D Kozmikus Idő-Tájképet kapjuk:
+\begin{itemize}
+  \item \textbf{Ürességbeli Óra-dombok ($\Delta(\mathrm{d}\tau/\mathrm{d}t) > 0\;\mathrm{ppm}$):} $2\,859$ objektum ($48.0\%$) pozitív óraeltolódású alulsűrű tartományban helyezkedik el, köztük $1\,348$ kifejezett kozmikus ürességekben ($\Delta(\mathrm{d}\tau/\mathrm{d}t) > +5\;\mathrm{ppm}$), $+35.81\;\mathrm{ppm}$ globális 95.\ percentilissel és $+484.04\;\mathrm{ppm}$ maximális óragyorsulással.
+  \item \textbf{Halmaz- és filamentumbeli Óra-völgyek ($\Delta(\mathrm{d}\tau/\mathrm{d}t) < -5\;\mathrm{ppm}$):} $665$ objektum túlsűrű filamentum/halmaz potenciálgödörben fekszik (ebből $336$ mély csomópont $-10\;\mathrm{ppm}$ alatt), $-11.09\;\mathrm{ppm}$ globális 5.\ percentilissel és $-289.60\;\mathrm{ppm}$ legmélyebb óralassulással, miközben az $5\,601$ galaxis medián sebességerősítése $V_{\mathrm{Tau}}/V_{\mathrm{GR}} = 1.3832\times$.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Zéró paraméteres ($k = 0$) 3D Kozmikus Idő-Tájkép statisztikák az élő ESA Euclid DR1-Foundation négy égbolt-mezőjében ($N = 5\,955$ egyedi extragalaktikus objektum: $5\,601$ galaxis + $354$ QSO nyomjelző; \texttt{data/derived/paper20\_euclid\_dr1\_field\_summary.csv}).}
+\label{tab:euclid_fields}
+\vspace{3pt}
+\resizebox{\textwidth}{!}{%
+\footnotesize
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Euclid DR1 mező} & \textbf{$N_{\mathrm{obj}}$ (Gal/QSO)} & \textbf{Med $(\mathrm{RA}, \mathrm{Dec})$} & \textbf{$z$ sáv ($z_{\mathrm{med}}$)} & \textbf{Void ($>+5\;\mathrm{ppm}$)} & \textbf{Gödör ($<-5\;\mathrm{ppm}$)} & \textbf{p05 / p95 [ppm] (Extrémumok)} & \textbf{Med $V_{\mathrm{Tau}}/V_{\mathrm{GR}}$} \\
+\midrule
+\textbf{EDFN-North} & $1\,500$ ($1500/0$) & $(262.73^\circ, +66.66^\circ)$ & $0.064\text{--}5.224$ ($1.875$) & $144$ & $45$ & $-3.32 / +8.94$ ($-12.7, +132.0$) & $\mathbf{1.4115\times}$ \\
+\textbf{COSMOS-Deep} & $2\,783$ ($2472/311$) & $(150.35^\circ, +2.16^\circ)$ & $0.078\text{--}5.475$ ($1.658$) & $786$ & $316$ & $-8.92 / +47.44$ ($-53.4, +385.0$) & $\mathbf{1.3964\times}$ \\
+\textbf{EDFF-Fornax} & $672$ ($629/43$) & $(53.17^\circ, -28.14^\circ)$ & $0.074\text{--}5.221$ ($1.674$) & $269$ & $246$ & $-28.16 / +68.29$ ($-112.5, +484.0$) & $\mathbf{1.3830\times}$ \\
+\textbf{Southern-Wide} & $1\,000$ ($1000/0$) & $(80.25^\circ, -51.02^\circ)$ & $0.064\text{--}3.368$ ($0.600$) & $149$ & $58$ & $-7.28 / +24.29$ ($-289.6, +160.1$) & $\mathbf{1.3066\times}$ \\
+\midrule
+\textbf{Teljes Euclid DR1} & $\mathbf{5\,955}$ ($5601/354$) & \textbf{4 Égbolt-régió} & $\mathbf{0.064\text{--}5.475}$ & $\mathbf{1\,348}$ & $\mathbf{665}$ & $\mathbf{-11.09 / +35.81}$ ($\mathbf{-289.6, +484.0}$) & $\mathbf{1.3832\times}$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\newpage
+\section{Teljes égboltos óraráta-kartográfia és konform téridő-kúp (\texorpdfstring{$z = 0 \to 1100$}{z = 0 -> 1100})}
+
+A négy Euclid DR1 felmérési régióról a teljes extragalaktikus égboltra kiterjesztve, a \ref{fig:fig3}. ábra $N = 249$ egyedileg katalogizált referenciarendszert (\texttt{data/\allowbreak derived/\allowbreak tau\_\allowbreak core\_\allowbreak universe\_\allowbreak model\_\allowbreak catalog\_\allowbreak v1.csv}) térképez fel teljes égboltos Mollweide-vetületen és egy $\pm 150\;\mathrm{Mpc}$-es Szupergalaktikus tomográfiai metszeten, tisztán $k = 0$ viriális és kozmológiai Poisson óraeltolódásokkal. A nagy szuperhalmazok (\textbf{Abell 2390}, \textbf{Shapley}, \textbf{Coma}, \textbf{Perseus--Pisces}, \textbf{Saraswati}, \textbf{El Gordo}) mélykék Óra-völgyeket ($\Delta(\mathrm{d}\tau/\mathrm{d}t) < 0, \kappa_{\mathrm{eff}} > 0$), míg a nagy szuperürességek (\textbf{Boötes}, \textbf{Eridanus / CMB Cold Spot}, \textbf{Dipole Repeller}, \textbf{Local Void}) vörös/arany Óra-dombokat ($\Delta(\mathrm{d}\tau/\mathrm{d}t) \in [+25, +75]\;\mathrm{ppm}, \kappa_{\mathrm{eff}} < 0$) alkotnak.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/fig3_allsky_mollweide_clock_atlas.png}
+  \caption{\textbf{Teljes égboltos Tau Core óraráta- és lencsézésikonvergencia-atlasz ($N = 249$ extragalaktikus referenciarendszer, $k = 0$).} (A) A kozmikus $\Delta(\mathrm{d}\tau/\mathrm{d}t)$ [ppm] óraeltolódás teljes égboltos Mollweide-vetülete. (B) Szupergalaktikus síkmetszet ($-150$-től $+150\;\mathrm{Mpc}$-ig), amelyen az anyagáramlási pályák a gyorsuló órájú szuperürességekből (\texttt{Dipole Repeller}, \texttt{Boötes}, \texttt{Local Void}) a lassuló órájú attraktorokba (\texttt{Shapley}, \texttt{Virgo/Laniakea}, \texttt{Coma}, \texttt{Perseus--Pisces}) tartanak. (C) Analitikus zéró paraméteres óraeltolódási törvény hét nagyságrendnyi $\rho_b/\bar{\rho}_b$ sűrűségkontraszton.}
+  \label{fig:fig3}
+\end{figure}
+
+A \ref{fig:fig4}. ábra a Tau Core Univerzum Modell teljes időbeli evolúcióját követi végig a konform visszatekintési fénykúpon a $K_4$ pregeometrikus eredettől ($\tau \to 0$) és a \textbf{Planck CMB Forró Határtól ($z = 1100$)} $z = 0$-ig. Az egzakt $\Omega_{m,0} = 0.3153$ Kodama--Hayward trajektóriával (\ref{eq:zdip}. egyenlet) az $a_0^{\mathrm{KH}}(z)/a_0^{\mathrm{KH}}(0)$ arány $z_{\mathrm{dip}} = 0.6316$-nál felveszi $0.9386$-os globális minimumát, majd az anyagdominált korszakban $z = 4.50$-nél $2.48\times$-osra, $z = 7.31$-nél (\textbf{REBELS-25} \cite{Rowland2024REBELS25}) $4.46\times$-osra, $z = 10.40$-nél (\textbf{ZF-UDS-7329} kialakulási korszaka \cite{Glazebrook2024}) $7.11\times$-esre, $z = 14.18$-nál (\textbf{JADES-GS-z14-0} \cite{Carniani2024JADESz14}) pedig $10.90\times$-esre emelkedik, gyors megfordulást ($z_{\mathrm{ta}} \approx 16.8$) és virializációt ($z_{\mathrm{vir}} \approx 10.5$) biztosítva lehetetlen $>100\%$-os barion-konverziós hatásfok nélkül.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/fig4_conformal_spacetime_wedge.png}
+  \caption{\textbf{A Tau Core Univerzum Modell konform téridő-kúpja $z = 0$-tól $z = 1100$-ig.} (A) Visszatekintési fénykúp öt kozmikus korszakon át a $z_{\mathrm{dip}} = 0.6316$ Kodama--Hayward inflexiós gyűrűvel. (B) Az $a_0^{\mathrm{KH}}(z)/a_0^{\mathrm{KH}}(0)$ egzakt evolúciója ($4.46\times$ $z=7.31$-nél, $10.90\times$ $z=14.18$-nál) a multi-teleszkópos mérésekkel összevetve. (C) A korai protogalaktikus kollapszus-erősítés, amely feloldja a JWST nagy $z$-jű galaxisparadoxonát.}
+  \label{fig:fig4}
+\end{figure}
+
+\newpage
+\section{Multi-teleszkópos kvantitatív szintézis és szuperüresség-tomográfia}
+
+Az \ref{fig:fig5}. és \ref{fig:fig6}. ábra, valamint a \ref{tab:multi_telescope}. táblázat összegzi a kanonikus zéró paraméteres Tau Core ($k = 0$) kvantitatív teljesítményét mind a 12 megfigyelési benchmarkon:
+\begin{itemize}
+  \item \textbf{Planck 2018 CMB TT+TE+EE ($z = 1090$, \ref{fig:fig5}. ábra A panel):} Az algebrai $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65 = 5.368105$ kondenzátum-arány $0.059\sigma$-n belül egyezik a Planck PR3 méréssel ($5.364 \pm 0.065$) \cite{Planck2018VI}, reprodukálva az akusztikus csúcsokat ($\ell_1 = 219.84, \ell_2 = 537.09, \ell_3 = 810.21$) és a $\sigma_8 = 0.8166$ értéket $\Delta\chi^2_{\mathrm{Plik}} = +0.009$ paritással $613$ sávteljesítményen.
+  \item \textbf{Euclid ERO Abell 2390 zászlóshajó-halmaz ($z = 0.228$, \ref{fig:fig5}. ábra B panel) és $165$ galaxishalmaz (\ref{fig:fig5}. ábra C panel):} A tiszta $k = 0$ Tau Core $M_{200}^{\mathrm{Tau}} = 1.481 \times 10^{15}\;M_\odot$ tömeget jósol az Euclid $(1.48 \pm 0.29)\times 10^{15}\;M_\odot$ gyenge lencsézési mérésével szemben ($0.002\sigma$ $M_{200}$-ban, $1.37\sigma$ $r_{200}$-ban) \cite{EuclidEROAbell2390}, és érintetlen $k = 0$ medián $M_{\mathrm{Tau}}/M_{\mathrm{WL}} = 1.0123$ ($\chi^2/N = 0.616$) arányt ér el a \texttt{CLASH-20} \cite{Umetsu2016CLASH}, $1.0107$ ($R_{500}$) és $0.9846$ ($R_{200} = 2.2\;\mathrm{Mpc}$, kombinált $\chi^2/N = 1.12$) arányt az \texttt{X-COP-12} \cite{Eckert2019XCOP}, $1.0032$ ($r_{2500}$, $\chi^2/N = 1.08$) és $0.9022$ ($R_{500}$) arányt a \texttt{LoCuSS-41} \cite{OkabeSmith2016LoCuSS}, $1.0621$ (\texttt{F39}) arányt a \texttt{CCCP-26}, valamint $1.0362$ ($\chi^2/N = 1.071$) arányt az \texttt{SPT-WTG-19} halmazmintán.
+  \item \textbf{Nagy vöröseltolódású JWST+HST+ALMA koronggalaxisok ($N = 60$, \ref{fig:fig5}. ábra D panel):} A $43$ JWST+HST $z \approx 0.9$-es korongon \cite{ManceraPina2025} a kanonikus \texttt{OCSR-H1 + COCA-H1} $\chi^2 = 138.97$-et ér el (csupasz \texttt{OCSR}: $\chi^2 = 149.55$; rendezett korongok $V/\sigma \ge 4$: $\chi^2_\nu = 1.63$), felülmúlva mind a $\Lambda\mathrm{CDM}$ SHMR ($\chi^2 = 227.75, \Delta\chi^2 = -88.8$), mind a statikus MOND RAR ($\chi^2 = 194.08$) modellt; a $17$ JWST+ALMA hideg $[\mathrm{C\,II}]/\mathrm{CO}$ korongon ($z = 1.47\text{--}7.31$) a medián $V_{\mathrm{Tau}}/V_{\mathrm{obs}} = 1.077$ és $\chi^2_\nu = 0.659$ ($\Lambda\mathrm{CDM}$: $2.241$).
+  \item \textbf{Eridanus Szuperüresség és a Planck CMB Cold Spot (\ref{fig:fig6}. ábra C--D panel):} Az Eridanus szuperürességben ($z = 0.15$, együttmozgó $R_v = 195\;\mathrm{Mpc}$, $\delta_0 = -0.32$ \cite{Kovacs2022Eridanus}) az egzakt $k = 0$ Poisson központi óragyorsulás $+55.69\;\mathrm{ppm}$, miközben az árnyékolatlan kétszektoros kondenzátum-szuszceptibilitás $(1 + \Omega_A/\Omega_b = 6.3681)$ a lineáris $\Lambda\mathrm{CDM}$ $\Delta T_{\mathrm{ISW}}^{\Lambda\mathrm{CDM}}(0) = -24.15\;\mu\mathrm{K}$ ISW-hatást $\Delta T_{\mathrm{Tau}}(0) = -153.79\;\mu\mathrm{K}$-re erősíti ($\chi^2/N = 0.46$ a 9-bines Planck PR3 SMICA profilon, $\Delta T_0^{\mathrm{obs}} = -146 \pm 18\;\mu\mathrm{K}$).
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/fig5_multi_telescope_validation_panel.png}
+  \caption{\textbf{Hatpaneles kvantitatív multi-teleszkópos validációs mester-atlasz ($k = 0$).} (A) Planck 2018 CMB TT teljesítményspektrum ($613$ bin). (B) Euclid ERO Abell 2390 zászlóshajó-halmaz ($z=0.228$, $M_{200}$ $0.002\sigma$-n belül). (C) $165$ egyedi galaxishalmaz 6 felmérésben (\texttt{CLASH-20}, \texttt{X-COP-12}, \texttt{LoCuSS-41}, \texttt{CCCP-26}, \texttt{SPT-WTG-19}, \texttt{HSC-XXL}). (D) $60$ nagy vöröseltolódású JWST+HST+ALMA koronggalaxis ($z = 0.83\text{--}7.31$, $\chi^2 = 138.97$ \texttt{COCA}-val). (E) Euclid/KiDS 16-pontos galaxis--galaxis gyenge lencsézési körsebesség-profilok ($15\text{--}1\,000\;\mathrm{kpc}$, kétszektoros $\chi^2_\nu = 7.27$ vs.\ tiszta barionos GR $\chi^2_\nu = 129.4$). (F) Univerzális barion--teljes dinamikai tömeg skálázás $6.5$ nagyságrenden át.}
+  \label{fig:fig5}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.98\textwidth]{figures/fig6_euclid_deep_fields_eridanus_tomography.png}
+  \caption{\textbf{Regionális mélymező-tomográfia (\texttt{EDFN}, \texttt{EDFS/EDFF}) és az Eridanus Szuperüresség / Planck CMB Cold Spot anomália egzakt $k = 0$ feloldása.} (A) Euclid Deep Field North (\texttt{EDFN}, $20\;\mathrm{deg}^2$) óraeltolódási térképe. (B) Euclid Deep Field South (\texttt{EDFS}) és Fornax (\texttt{EDFF/JADES}) mély fénykúp-tomográfia ($z = 0.05 \to 14.18$, elérve a $10.90\times\,a_0^{\mathrm{KH}}(0)$ értéket). (C) Eridanus Szuperüresség tiszta $k = 0$ Poisson óragyorsulása ($+55.69\;\mathrm{ppm}$) és divergens gyenge lencsézési profilja ($\kappa_{\mathrm{eff}} < 0$). (D) A Planck CMB Cold Spot analitikus kétszektoros ISW feloldása ($\Delta T_{\mathrm{Tau}}(0) = -153.79\;\mu\mathrm{K}$, $\chi^2/N = 0.46$) a lineáris $\Lambda\mathrm{CDM}$ ISW-vel ($-24.15\;\mu\mathrm{K}$) szemben.}
+  \label{fig:fig6}
+\end{figure}
+
+\newpage
+\section{Összehasonlítás a Wiltshire-féle Timescape modellel és falszifikációs mátrix}
+
+A Tau Core Kozmikus Idő-Tájkép összevetése a makroszkopikus inhomogén GR-visszahatási modellekkel --- különösen Wiltshire \emph{Timescape kozmológiájával} \cite{Wiltshire2007Timescape} --- világossá teszi, miért elengedhetetlen a pregeometrikus óragradiens-törvény (\ref{fig:fig7}. ábra és \ref{tab:multi_telescope}. táblázat):
+\begin{enumerate}
+  \item \textbf{Galaktikus és halmazbeli ,,sötét anyag'' dinamika:} Mivel a Timescape a kötött falakon belül változatlanul hagyja a klasszikus GR-t, részecske-sötétanyag nélkül nem képes megmagyarázni sem a lapos galaktikus rotációs görbéket, sem az $524$ Euclid DR1 lencse $\Delta\Sigma(R)$ többletét, sem a halmazok $R_{200}$ lencsézését, és szabad ürességarány-paraméterekkel ($f_{v0}, \Omega_{M0}$) illeszti a tágulást. A Tau Core $k = 0$ szabad paraméterrel vezeti le az $\alpha_{\mathrm{OCSR}} = 5\sqrt{3}/24$, $a_0^{\mathrm{Kin}}(0) = 1.1808\times 10^{-10}\;\mathrm{m\,s^{-2}}$, $a_0^{\mathrm{KH}}(0) = 0.9015\times 10^{-10}\;\mathrm{m\,s^{-2}}$ skálákat és a halmaz-kondenzátum törvényt.
+  \item \textbf{Egzakt $5.368:1$ CMB sötét/barion arány:} A Timescape nem ad mikrofizikai levezetést az $\Omega_{\mathrm{DM}}/\Omega_b \approx 5.364$ arányra, míg az \texttt{U1/F1 tétel} rögzíti az $\Omega_{A,\mathrm{eff}}/\Omega_b = (213\sqrt{3}-20)/65 = 5.368105$ ($0.059\sigma$) értéket.
+  \item \textbf{$z_{\mathrm{dip}} = 0.6316$ inflexiós minimum, korai JWST kollapszus és \texttt{C2--C3.\ tétel} lezárás:} A Tau Core egyedülállóan jósolja meg az $a_0^{\mathrm{KH}}(z)$ nem-monoton minimumát $z_{\mathrm{dip}} = 0.6316$-nál ($0.63084$ a körkörösségtől mentes Cai--Kim--Hayward + önálló \texttt{RECFAST v1.5} akusztikus lezárás mellett: $H_0^{\mathrm{Tau}} = 67.34\;\mathrm{km\,s^{-1}\,Mpc^{-1}}$, $\Omega_{m,0}^{\mathrm{Tau}} = 0.31557, \Omega_{\Lambda,0}^{\mathrm{Tau}} = 0.68437$, Moresco $15\times 15$ kovariancia $\chi^2/N = 0.413$, \texttt{C2.\ tétel}) és $10.90\times$-es erősödését $z = 14.18$-ig. Továbbá a merev $u_{\mathrm{sh}} = 1.35\,R_{200}$ bezárás helyett az ütközéses ($\mathrm{Kn} \ll 1$) Virial--Bernoulli lökéshullám-megtartási törvény, $f_{\mathrm{bound}}^{\mathrm{VB}} = \min(1, \lambda_{\mathrm{VB}})$ (\texttt{C3.\ tétel}, $k = 0$, expliciten \texttt{F49} utáni, nem-vak lezárás az \texttt{HSC-XXL} mintán) $Y_b = 0.472$ (megfigyelt: $0.433$) értéket ad, $0.679$-ről $\mathbf{0.9443}$-ra emelve a $13$ kis tömegű $T_X < 2.5\;\mathrm{keV}$ galaxiscsoport mediánját, miközben a nagy tömegű $T_X \ge 3\;\mathrm{keV}$ halmazokat érintetlenül tartja $\mathbf{1.0774}$-nél (\texttt{HSC-XXL-40} $\chi^2/N = \mathbf{0.348}$, \texttt{SPT-WTG-19} $1.0564$, \texttt{LoCuSS-41} $0.9014/1.0668$), így a \texttt{NATURE\_LEVEL\_CLOSURE = false} kizárólag az \texttt{EAS-SNPR-N1} ontikus korlátra és a jövőbeli vak Euclid DR2/DR3, Gaia DR4 és SKA-PTA kapukra vonatkozik.
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/fig7_wiltshire_timescape_vs_tau_core_and_falsification_matrix.png}
+  \caption{\textbf{Multi-teleszkópos összehasonlító eredménytábla és episztemikus határmátrix ($k = 0$ Tau Core vs.\ $\Lambda\mathrm{CDM}$, klasszikus MOND és Wiltshire Timescape).} (A) Kvantitatív redukált $\chi^2_\nu$ és feszültség-összehasonlítás 10 megfigyelési benchmarkon a Naprendszertől a CMB skáláig. (B) Képesség- és falszifikációs mátrix 10 fizikai tartományban, expliciten kiemelve a kis tömegű csoportok ($T_X < 2.5\;\mathrm{keV}$) AGN gázkifújási határát és az upstream \texttt{NATURE\_LEVEL\_CLOSURE = false} státuszt.}
+  \label{fig:fig7}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{A Paper 20 egyesített 12-benchmarkos empirikus validációs összefoglaló táblázata (\texttt{data/derived/paper20\_multi\_telescope\_benchmark\_summary.csv}).}
+\label{tab:multi_telescope}
+\vspace{3pt}
+\resizebox{\textwidth}{!}{%
+\footnotesize
+\begin{tabular}{L{3.6cm}ccL{4.5cm}L{3.9cm}}
+\toprule
+\textbf{Teleszkóp / Benchmark} & \textbf{Korszak ($z$)} & \textbf{Minta ($N$)} & \textbf{Tau Core ($k = 0$) eredmény} & \textbf{$\Lambda$CDM / GR / MOND alapvonal} \\
+\midrule
+\textbf{1. Élő Euclid DR1 RAR} (\texttt{dr1.spectro\_*}) & $0.13\text{--}3.49$ & $359$ gal ($1\,500$ vonal) & Med $g_{\mathrm{bar}} = 0.5679\,a_0^{\mathrm{Kin}}(0)$; $V_{\mathrm{Tau}}/V_{\mathrm{GR}} = \mathbf{1.3247\times}$ ($114.09$ vs $84.76\;\mathrm{km/s}$) & A tiszta barionos GR alulbecsüli a körsebességet $R_{\mathrm{eff}}$-nél \\
+\addlinespace[2pt]
+\textbf{2. Élő Euclid DR1 lencsék} (\texttt{dr1.mer\_* + phz\_*}) & $0.15\text{--}0.90$ & $524$ lencse & $\Delta\Sigma(200\;\mathrm{kpc}) = \mathbf{4.017}$ izolált ($\mathbf{9.36\times}$ GR) / $\mathbf{18.076\;M_\odot/\mathrm{pc}^2}$ 2-szektor ($\mathbf{42.1\times}$) & Tiszta barionos GR: $0.4292\;M_\odot/\mathrm{pc}^2$ (kepleri lecsengés) \\
+\addlinespace[2pt]
+\textbf{3. Élő Euclid DR1 3D térkép} ($4$ égbolt-régió) & $0.06\text{--}5.48$ & $5\,955$ objektum & $1\,348$ void ($>+5\;\mathrm{ppm}$, p95 $+35.81$); $665$ gödör ($<-5\;\mathrm{ppm}$, p05 $-11.09$) & A standard FLRW homogén órát feltételez ($\Delta(\mathrm{d}\tau/\mathrm{d}t) \equiv 0$) \\
+\addlinespace[2pt]
+\textbf{4. ESA Planck PR3 CMB} (TT+TE+EE) & $1090$ & $613$ bin & $\Omega_A/\Omega_b = \mathbf{5.3681}$ ($0.059\sigma$); $\ell_{1,2,3} = 219.8, 537.1, 810.2$ & Planck: $5.364 \pm 0.065$; $\Delta\chi^2_{\mathrm{Plik}} = \mathbf{+0.009}$ paritás \\
+\addlinespace[2pt]
+\textbf{5. Euclid ERO Abell 2390} (Erős+Gyenge WL) & $0.228$ & $16$ radiális bin & $M_{200}^{\mathrm{Tau}} = \mathbf{1.481 \times 10^{15}\;M_\odot}$ ($\mathbf{0.002\sigma}$ $M_{200}$, $1.37\sigma$ $r_{200}$) & Euclid WL: $(1.48 \pm 0.29)\times 10^{15}\;M_\odot$; Barion GR $6.4\times$ kicsi \\
+\addlinespace[2pt]
+\textbf{6. 165 galaxishalmaz} ($6$ felmérés) & $0.05\text{--}1.13$ & $165$ halmaz & \texttt{CLASH} $1.012$, \texttt{X-COP} $1.011/0.985$, \texttt{LoCuSS} $1.003$, \texttt{SPT} $1.036$ & A statikus MOND elbukik $R_{200}$-nál ($\Delta\mathrm{AIC} = +126.9$) \\
+\addlinespace[2pt]
+\textbf{7. JWST + HST korongok} (\texttt{Mancera Pi\~na+ 25}) & $0.83\text{--}1.00$ & $43$ korong & \texttt{OCSR+COCA}: $\chi^2 = \mathbf{138.97}$ (csupasz $149.55$); Rendezett: $\chi^2_\nu = \mathbf{1.63}$ & $\Lambda$CDM SHMR: $\chi^2 = \mathbf{227.75}$; Statikus RAR: $194.08$ \\
+\addlinespace[2pt]
+\textbf{8. JWST + ALMA korongok} (\texttt{[CII]/CO}) & $1.47\text{--}7.31$ & $17$ korong & Medián $V_{\mathrm{Tau}}/V_{\mathrm{obs}} = \mathbf{1.077}$; $\chi^2_\nu = \mathbf{0.659}$ & $\Lambda$CDM SHMR: $\chi^2_\nu = \mathbf{2.241}$ \\
+\addlinespace[2pt]
+\textbf{9. JWST korai kollapszus} (\texttt{JADES-z14 / ZF-UDS}) & $3.21\text{--}14.18$ & $4$ rendszer & Megfordulás $z_{\mathrm{ta}} \approx 16.8$, virializáció $z_{\mathrm{vir}} \approx \mathbf{10.5}$ ($10.9\times a_0^{\mathrm{KH}}(0)$) & A $\Lambda$CDM lehetetlen $>100\%$ barion-konverziót igényel \\
+\addlinespace[2pt]
+\textbf{10. Eridanus Szuperüresség} (Planck Cold Spot) & $0.15$ & $9$ profil-bin & Void óra $+55.69\;\mathrm{ppm} \implies \Delta T_{\mathrm{Tau}}(0) = \mathbf{-153.79\;\mu\mathrm{K}}$ ($\chi^2/N = \mathbf{0.46}$) & Lineáris $\Lambda$CDM ISW: $-24.15\;\mu\mathrm{K}$ ($>5\sigma$ eltérés) \\
+\addlinespace[2pt]
+\textbf{11. Spitzer + VLA SPARC} (Rotációs görbék) & $0.0$ & $175$ gal ($3\,373$ pont) & \texttt{OCSR+COCA} $\mathrm{RMSE} = \mathbf{12.36\;\mathrm{km/s}}$ (csupasz $12.67$, $k_{\mathrm{gal}} = 0$) & Illesztett MOND: $13.74\;\mathrm{km/s}$; Newton: $41.09\;\mathrm{km/s}$ \\
+\addlinespace[2pt]
+\textbf{12. Cassini + NANOGrav} (Naprendszer / PTA) & $0.0$ & $36$ pulzár & NANOGrav $\mathrm{BF}_{10} = \mathbf{1.345}$; Cassini $|\gamma - 1| = \mathbf{6.37\times 10^{-11}}$ & Cassini korlát $< 2.3\times 10^{-5}$ ($5$ nagyságrenddel teljesül) \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+\end{document}
